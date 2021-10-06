@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /*Fannys kod börjar här*/
+.products {
+  text-align: center;
+}
+
 .productwrapper {
   display: flex;
   flex-wrap: wrap;
