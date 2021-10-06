@@ -1,15 +1,49 @@
 @charset "UTF-8";
 /*Fannys kod börjar här*/
 .productwrapper {
-  display: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
-.productwrapper .img-1 {
-  width: 40vh;
-  height: 40vh;
-  background-image: url(../Bilder/kopp-blå.jpeg);
+.productwrapper .container-1, .productwrapper .container-2, .productwrapper .container-3, .productwrapper .container-4, .productwrapper .container-5, .productwrapper .container-6, .productwrapper .container-7, .productwrapper .container-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+.productwrapper p {
+  margin: 5px;
+}
+.productwrapper .img-1, .productwrapper .img-2, .productwrapper .img-3, .productwrapper .img-4, .productwrapper .img-5, .productwrapper .img-6, .productwrapper .img-7, .productwrapper .img-8 {
+  width: 30vh;
+  height: 30vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 15px;
+}
+.productwrapper .img-1 {
+  background-image: url(../Bilder/kopp-blå.jpeg);
+}
+.productwrapper .img-2 {
+  background-image: url(../Bilder/kopp-ljusgrå.jpeg);
+}
+.productwrapper .img-3 {
+  background-image: url(../Bilder/kopp-mörkgrå.jpeg);
+}
+.productwrapper .img-4 {
+  background-image: url(../Bilder/kopp-turkos.jpeg);
+}
+.productwrapper .img-5 {
+  background-image: url(../Bilder/vas-smal-vit.jpeg);
+}
+.productwrapper .img-6 {
+  background-image: url(../Bilder/vas-rung-mörkgrön.jpeg);
+}
+.productwrapper .img-7 {
+  background-image: url(../Bilder/vas-stor-grå.jpeg);
+}
+.productwrapper .img-8 {
+  background-image: url(../Bilder/vas-stor-vit.jpeg);
 }
 
 /*# sourceMappingURL=main.css.map */
