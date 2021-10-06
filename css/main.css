@@ -1,3 +1,15 @@
-
+@charset "UTF-8";
+/*Fannys kod börjar här*/
+.productwrapper {
+  display: wrap;
+}
+.productwrapper .img-1 {
+  width: 40vh;
+  height: 40vh;
+  background-image: url(../Bilder/kopp-blå.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*# sourceMappingURL=main.css.map */
