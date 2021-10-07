@@ -4,46 +4,52 @@ body, html {
   font-size: 12px;
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ececec; }
+  background-color: #ececec;
+}
 
 .grid-container {
   display: grid;
   grid-template-columns: 100px 1fr 100px 1fr;
   grid-template-rows: 25vh 50vh 20vh;
   grid-gap: 1em;
-  grid-template-areas: "header header header header"
- "content content content content"
- "sidebar sidebar sidebar sidebar"; }
+  grid-template-areas: "header header header header" "content content content content" "sidebar sidebar sidebar sidebar";
+}
 
 .header {
   grid-area: header;
   display: flex;
   flex-direction: row;
   text-align: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .logo {
   background-image: url(../Bilder/smalllogogrey.png);
-  width: 26vh;
-  height: 20vh;
+  width: 30vh;
+  height: 30vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+}
 
-nav ul {
+x nav ul {
   padding: 10px;
-  margin: 10; }
+  margin: 10;
+}
 
 nav ul > li {
-  list-style: none; }
+  list-style: none;
+}
 
 nav ul > li > a {
   text-decoration: none;
   color: rgba(41, 38, 38, 0.815);
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+}
 
 a:hover {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 .hero {
   grid-area: content;
@@ -53,7 +59,8 @@ a:hover {
   align-items: center;
   background-image: url(../Bilder/Ev-hero6.jpeg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+}
 
 .hero > p {
   font-size: 2.3rem;
@@ -61,25 +68,30 @@ a:hover {
   text-align: center;
   color: rgba(255, 255, 255, 0.815);
   align-items: center;
-  width: 60%; }
+  width: 60%;
+}
 
 .button {
   color: #292601;
   border-style: none;
   height: 55px;
   width: 110px;
-  background-color: rgba(255, 255, 255, 0.637); }
+  background-color: rgba(255, 255, 255, 0.637);
+}
 
 button:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 .sidebar {
-  grid-area: sidebar; }
+  grid-area: sidebar;
+}
 
 /*Fannys kod börjar här*/
 .products {
-  text-align: center; }
+  text-align: center;
+}
 
 .productwrapper {
   display: flex;
@@ -127,16 +139,22 @@ button:hover {
 .productwrapper .img-8 {
   background-image: url(../Bilder/vas-largewhite.jpeg);
 }
+
 .om {
   height: 250px;
-  border: 1px solid black; }
+  border: 1px solid black;
+}
 
 .kontakt {
   height: 250px;
   border: 1px solid black;
   display: flex;
   flex-direction: row;
-  align-items: center; }
-  .kontakt .icon {
-    list-style: none;
-    font-size: 1em; }
+  align-items: center;
+}
+.kontakt .icon {
+  list-style: none;
+  font-size: 1em;
+}
+
+/*# sourceMappingURL=main.css.map */
