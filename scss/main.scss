@@ -27,7 +27,7 @@ body, html {
 }
 
 .logo {
-    background-image: url("img/litethjärtagrått.png");
+    background-image: url(../Bilder/litethjärtagrått.png);
     width: 26vh;
     height: 20vh;
     background-position: center;
@@ -58,7 +58,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("img/Ev-hero6.jpeg");
+    background-image: url(../Bilder/Ev-hero6.jpeg);
     background-size: cover;
     background-position: center;
 
