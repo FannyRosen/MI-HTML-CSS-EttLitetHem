@@ -11,9 +11,7 @@ body, html {
   grid-template-columns: 100px 1fr 100px 1fr;
   grid-template-rows: 25vh 50vh 20vh;
   grid-gap: 1em;
-  grid-template-areas: "header header header header"
- "content content content content"
- "sidebar sidebar sidebar sidebar"; }
+  grid-template-areas: "header header header header" "content content content content" "sidebar sidebar sidebar sidebar"; }
 
 .header {
   grid-area: header;
@@ -84,59 +82,64 @@ button:hover {
 .productwrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
-.productwrapper .container-1, .productwrapper .container-2, .productwrapper .container-3, .productwrapper .container-4, .productwrapper .container-5, .productwrapper .container-6, .productwrapper .container-7, .productwrapper .container-8 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 15px;
-}
-.productwrapper p {
-  margin: 5px;
-}
-.productwrapper .img-1, .productwrapper .img-2, .productwrapper .img-3, .productwrapper .img-4, .productwrapper .img-5, .productwrapper .img-6, .productwrapper .img-7, .productwrapper .img-8 {
-  width: 30vh;
-  height: 30vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 15px;
-}
-.productwrapper .img-1 {
-  background-image: url(../Bilder/kopp-blue.jpeg);
-}
-.productwrapper .img-2 {
-  background-image: url(../Bilder/kopp-lightgrey.jpeg);
-}
-.productwrapper .img-3 {
-  background-image: url(../Bilder/kopp-grey.jpeg);
-}
-.productwrapper .img-4 {
-  background-image: url(../Bilder/kopp-turkos.jpeg);
-}
-.productwrapper .img-5 {
-  background-image: url(../Bilder/vas-smal-vit.jpeg);
-}
-.productwrapper .img-6 {
-  background-image: url(../Bilder/vas-rounddarkgreen.jpeg);
-}
-.productwrapper .img-7 {
-  background-image: url(../Bilder/vas-largegrey.jpeg);
-}
-.productwrapper .img-8 {
-  background-image: url(../Bilder/vas-largewhite.jpeg);
-}
+  justify-content: center; }
+  .productwrapper .container-1, .productwrapper .container-2, .productwrapper .container-3, .productwrapper .container-4, .productwrapper .container-5, .productwrapper .container-6, .productwrapper .container-7, .productwrapper .container-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px; }
+  .productwrapper p {
+    margin: 5px; }
+  .productwrapper .img-1, .productwrapper .img-2, .productwrapper .img-3, .productwrapper .img-4, .productwrapper .img-5, .productwrapper .img-6, .productwrapper .img-7, .productwrapper .img-8 {
+    width: 30vh;
+    height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 15px; }
+  .productwrapper .img-1 {
+    background-image: url(../Bilder/kopp-blue.jpeg); }
+  .productwrapper .img-2 {
+    background-image: url(../Bilder/kopp-lightgrey.jpeg); }
+  .productwrapper .img-3 {
+    background-image: url(../Bilder/kopp-grey.jpeg); }
+  .productwrapper .img-4 {
+    background-image: url(../Bilder/kopp-turkos.jpeg); }
+  .productwrapper .img-5 {
+    background-image: url(../Bilder/vas-smal-vit.jpeg); }
+  .productwrapper .img-6 {
+    background-image: url(../Bilder/vas-rounddarkgreen.jpeg); }
+  .productwrapper .img-7 {
+    background-image: url(../Bilder/vas-largegrey.jpeg); }
+  .productwrapper .img-8 {
+    background-image: url(../Bilder/vas-largewhite.jpeg); }
+
+/*Rasmus kod börjar här*/
 .om {
-  height: 250px;
-  border: 1px solid black; }
+  height: 600px;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column; }
+  .om .elsa-con {
+    height: 800px; }
+  .om .elsa-img {
+    background-image: url(../Bilder/Elsa.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: cover; }
 
 .kontakt {
   height: 250px;
   border: 1px solid black;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center; }
-  .kontakt .icon {
-    list-style: none;
-    font-size: 1em; }
+  .kontakt .icon-con {
+    width: 100%; }
+    .kontakt .icon-con .icon {
+      list-style: none;
+      font-size: 1em;
+      width: 100%; }
+  .kontakt .kon-text {
+    width: 100%; }
