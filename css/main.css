@@ -116,7 +116,7 @@ button:hover {
 
 /*Rasmus kod börjar här*/
 .om {
-  height: 600px;
+  height: 400px;
   width: 100%;
   border: 1px solid black;
   display: flex;
@@ -138,7 +138,7 @@ button:hover {
     background-size: cover; }
 
 .kontakt {
-  height: 300px;
+  height: 350px;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
