@@ -121,6 +121,14 @@ button:hover {
   border: 1px solid black;
   display: flex;
   flex-direction: column; }
+  .om .om-h3 {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    text-decoration-line: underline; }
+  .om .om-p {
+    font-size: 1em;
+    line-height: 1.8em;
+    margin-bottom: 15px; }
   .om .elsa-con {
     height: 800px; }
   .om .elsa-img {
@@ -130,18 +138,32 @@ button:hover {
     background-size: cover; }
 
 .kontakt {
-  height: 250px;
+  height: 300px;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: left; }
   .kontakt .icon-con {
     width: 100%;
-    text-align: center; }
+    text-align: left;
+    position: relative; }
     .kontakt .icon-con .icon {
-      list-style: none;
-      font-size: 1.2em;
-      width: 100%; }
+      list-style: none; }
+      .kontakt .icon-con .icon .btn-primary {
+        background-color: transparent;
+        border-color: transparent; }
+      .kontakt .icon-con .icon .bi-twitter {
+        background-color: #55acee;
+        font-size: 2em;
+        border-radius: 50%; }
+      .kontakt .icon-con .icon .bi-facebook {
+        background-color: #3b5998;
+        font-size: 2em;
+        border-radius: 50%; }
+      .kontakt .icon-con .icon .bi-instagram {
+        background-color: #ac2bac;
+        font-size: 2em;
+        border-radius: 50%; }
   .kontakt .kon-con {
     width: 100%; }
     .kontakt .kon-con ul {
