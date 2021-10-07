@@ -174,13 +174,17 @@ button:hover {
   align-items: center;
   .icon-con{
       width: 100%;
+      text-align: center;
       .icon{
           list-style: none;
-          font-size: 1em;
+          font-size: 1.2em;
           width: 100%;
       }
   }
-  .kon-text{
+  .kon-con{
       width: 100%;
+      ul{
+          list-style: none;
+      }
   }
 }

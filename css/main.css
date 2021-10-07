@@ -136,10 +136,13 @@ button:hover {
   flex-direction: column;
   align-items: center; }
   .kontakt .icon-con {
-    width: 100%; }
+    width: 100%;
+    text-align: center; }
     .kontakt .icon-con .icon {
       list-style: none;
-      font-size: 1em;
+      font-size: 1.2em;
       width: 100%; }
-  .kontakt .kon-text {
+  .kontakt .kon-con {
     width: 100%; }
+    .kontakt .kon-con ul {
+      list-style: none; }
