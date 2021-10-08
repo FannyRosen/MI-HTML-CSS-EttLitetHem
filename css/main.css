@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Hannas kod börjar här*/
-body, html {
+body,
+html {
   font-size: 12px;
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
@@ -28,8 +29,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover; }
 
-x
-nav ul {
+x nav ul {
   padding: 10px;
   margin: 10; }
 
@@ -84,14 +84,28 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-  .productwrapper .container-1, .productwrapper .container-2, .productwrapper .container-3, .productwrapper .container-4, .productwrapper .container-5, .productwrapper .container-6, .productwrapper .container-7, .productwrapper .container-8 {
+  .productwrapper .container-1,
+  .productwrapper .container-2,
+  .productwrapper .container-3,
+  .productwrapper .container-4,
+  .productwrapper .container-5,
+  .productwrapper .container-6,
+  .productwrapper .container-7,
+  .productwrapper .container-8 {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 15px; }
   .productwrapper p {
     margin: 5px; }
-  .productwrapper .img-1, .productwrapper .img-2, .productwrapper .img-3, .productwrapper .img-4, .productwrapper .img-5, .productwrapper .img-6, .productwrapper .img-7, .productwrapper .img-8 {
+  .productwrapper .img-1,
+  .productwrapper .img-2,
+  .productwrapper .img-3,
+  .productwrapper .img-4,
+  .productwrapper .img-5,
+  .productwrapper .img-6,
+  .productwrapper .img-7,
+  .productwrapper .img-8 {
     width: 30vh;
     height: 30vh;
     background-position: center;
@@ -127,8 +141,9 @@ button:hover {
   .om .elsa-img {
     background-image: url(../Bilder/Elsa.jpeg);
     width: 100%;
-    height: 100%;
-    background-size: cover; }
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat; }
 
 .bi-arrow-down-circle {
   color: white;
@@ -159,3 +174,10 @@ button:hover {
     font-size: 2em;
     border-radius: 50%;
     color: white; }
+
+@media screen and (min-width: 800px) {
+  .elsa-con {
+    height: 800px; }
+  .elsa-img {
+    max-width: 400px;
+    max-height: 500px; } }

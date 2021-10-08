@@ -1,154 +1,163 @@
 /*Hannas kod börjar här*/
-body, html {
-    font-size: 12px;
-    height: 100%;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: #ececec;
+body,
+html {
+  font-size: 12px;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ececec;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 100px 1fr 100px 1fr;
-    grid-template-rows: 25vh 50vh 20vh;
-    grid-gap: 1em;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: 100px 1fr 100px 1fr;
+  grid-template-rows: 25vh 50vh 20vh;
+  grid-gap: 1em;
+  grid-template-areas:
     "header header header header"
     "content content content content"
     "sidebar sidebar sidebar sidebar";
 }
 
 .header {
-    grid-area: header;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-around;
-
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
 }
 
 .logo {
-    background-image: url(../Bilder/smalllogogrey.png);
-    width: 30vh;
-    height: 30vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}x
-nav ul {
-    padding: 10px;
-    margin:10;
+  background-image: url(../Bilder/smalllogogrey.png);
+  width: 30vh;
+  height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+x nav ul {
+  padding: 10px;
+  margin: 10;
 }
 nav ul > li {
-    list-style: none;  
+  list-style: none;
 }
 
 nav ul > li > a {
-    text-decoration: none;
-    color: rgba(41, 38, 38, 0.815);
-   font-size: 1.2rem;
+  text-decoration: none;
+  color: rgba(41, 38, 38, 0.815);
+  font-size: 1.2rem;
 }
 
 a:hover {
-    text-decoration: underline;
-} 
+  text-decoration: underline;
+}
 
 .hero {
-    grid-area: content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../Bilder/Ev-hero6.jpeg);
-    background-size: cover;
-    background-position: center;
-
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../Bilder/Ev-hero6.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 .hero > p {
-    font-size: 2.3rem;
-    font-weight: lighter;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.815);
-    align-items: center;
-    width: 60%;
+  font-size: 2.3rem;
+  font-weight: lighter;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.815);
+  align-items: center;
+  width: 60%;
 }
 
 .button {
-    color: rgb(41, 38, 0.815);
-    border-style: none;
-    height: 55px;
-    width: 110px;
-  
-    background-color: rgba(255, 255, 255, 0.637);
-   
-   }
-    
+  color: rgb(41, 38, 0.815);
+  border-style: none;
+  height: 55px;
+  width: 110px;
+
+  background-color: rgba(255, 255, 255, 0.637);
+}
+
 button:hover {
-   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-   font-size: 18px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  font-size: 18px;
 }
 
 .sidebar {
-    grid-area: sidebar;
+  grid-area: sidebar;
 }
 
 /*Fannys kod börjar här*/
-.products{
-    text-align: center;
+.products {
+  text-align: center;
 }
 .productwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .container-1,
+  .container-2,
+  .container-3,
+  .container-4,
+  .container-5,
+  .container-6,
+  .container-7,
+  .container-8 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+  }
+  p {
+    margin: 5px;
+  }
 
-
-    .container-1, .container-2, .container-3, .container-4, .container-5, .container-6, .container-7, .container-8{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 15px;
-        
-    }
-    p{
-        margin: 5px;
-       
-    }
-  
-   .img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8{
+  .img-1,
+  .img-2,
+  .img-3,
+  .img-4,
+  .img-5,
+  .img-6,
+  .img-7,
+  .img-8 {
     width: 30vh;
     height: 30vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 15px;
-    
-   }
-   .img-1{
-       background-image: url(../Bilder/kopp-blue.jpeg);
-   }
-   .img-2{
-       background-image: url(../Bilder/kopp-lightgrey.jpeg);
-   }
-   .img-3{
+  }
+  .img-1 {
+    background-image: url(../Bilder/kopp-blue.jpeg);
+  }
+  .img-2 {
+    background-image: url(../Bilder/kopp-lightgrey.jpeg);
+  }
+  .img-3 {
     background-image: url(../Bilder/kopp-grey.jpeg);
-   }
-   .img-4{
+  }
+  .img-4 {
     background-image: url(../Bilder/kopp-turkos.jpeg);
-   }
-   .img-5{
+  }
+  .img-5 {
     background-image: url(../Bilder/vas-smal-vit.jpeg);
-   }
-   .img-6{
+  }
+  .img-6 {
     background-image: url(../Bilder/vas-rounddarkgreen.jpeg);
-   }
-   .img-7{
+  }
+  .img-7 {
     background-image: url(../Bilder/vas-largegrey.jpeg);
-   }
-   .img-8{
+  }
+  .img-8 {
     background-image: url(../Bilder/vas-largewhite.jpeg);
-   }
+  }
 }
 
-/*Rasmus kod börjar här*/ 
+/*Rasmus kod börjar här*/
 .om {
   height: 400px;
   width: 100%;
@@ -156,23 +165,32 @@ button:hover {
   display: flex;
   flex-direction: column;
   .elsa-con {
-      height: 800px;
-    }
+    height: 800px;
+  }
   .elsa-img {
-      background-image: url(../Bilder/Elsa.jpeg);
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-    }
+    background-image: url(../Bilder/Elsa.jpeg);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  //   .elsa-img {
+  //       background-image: url(../Bilder/Elsa.jpeg);
+  //       width: 365px;
+  //       height: 400px;
+  //       background-size: cover;
+  //       background-repeat: no-repeat;
+  //       padding-left: 10px;
+  //     }
 }
 
-.bi-arrow-down-circle{
-    color: white;
-    font-weight: lighter;
-    position: relative;
-    margin-top: 40px;
-    border-radius: 50%;
-    font-size: 1.5em;
+.bi-arrow-down-circle {
+  color: white;
+  font-weight: lighter;
+  position: relative;
+  margin-top: 40px;
+  border-radius: 50%;
+  font-size: 1.5em;
 }
 
 .kontakt {
@@ -181,23 +199,32 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: left;
-          .bi-twitter{
-            background-color: #55acee;
-            font-size: 2em;
-            border-radius: 50%;
-            color: white;
-          }
-          .bi-facebook{
-            background-color: #3b5998;
-            font-size: 2em;
-            border-radius: 50%;
-            color: white;
-          }
-          .bi-instagram{
-            background-color: #ac2bac;
-            font-size: 2em;
-            border-radius: 50%;
-            color: white;
-          }
-      }
-  
+  .bi-twitter {
+    background-color: #55acee;
+    font-size: 2em;
+    border-radius: 50%;
+    color: white;
+  }
+  .bi-facebook {
+    background-color: #3b5998;
+    font-size: 2em;
+    border-radius: 50%;
+    color: white;
+  }
+  .bi-instagram {
+    background-color: #ac2bac;
+    font-size: 2em;
+    border-radius: 50%;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .elsa-con {
+    height: 800px;
+  }
+  .elsa-img {
+    max-width: 400px;
+    max-height: 500px;
+  }
+}
