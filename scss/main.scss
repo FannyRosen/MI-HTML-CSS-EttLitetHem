@@ -182,16 +182,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: left;
-  .icon-con{
-      width: 100%;
-      text-align: left;
-      position: relative;
-      .icon{
-          list-style: none;
-          .btn-primary{
-              background-color: transparent;
-              border-color: transparent;
-          }
           .bi-twitter{
             background-color: #55acee;
             font-size: 2em;
@@ -208,11 +198,4 @@ button:hover {
             border-radius: 50%;
           }
       }
-  }
-  .kon-con{
-      width: 100%;
-      ul{
-          list-style: none;
-      }
-  }
-}
+  

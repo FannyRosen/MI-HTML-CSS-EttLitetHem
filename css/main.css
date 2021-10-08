@@ -144,28 +144,15 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: left; }
-  .kontakt .icon-con {
-    width: 100%;
-    text-align: left;
-    position: relative; }
-    .kontakt .icon-con .icon {
-      list-style: none; }
-      .kontakt .icon-con .icon .btn-primary {
-        background-color: transparent;
-        border-color: transparent; }
-      .kontakt .icon-con .icon .bi-twitter {
-        background-color: #55acee;
-        font-size: 2em;
-        border-radius: 50%; }
-      .kontakt .icon-con .icon .bi-facebook {
-        background-color: #3b5998;
-        font-size: 2em;
-        border-radius: 50%; }
-      .kontakt .icon-con .icon .bi-instagram {
-        background-color: #ac2bac;
-        font-size: 2em;
-        border-radius: 50%; }
-  .kontakt .kon-con {
-    width: 100%; }
-    .kontakt .kon-con ul {
-      list-style: none; }
+  .kontakt .bi-twitter {
+    background-color: #55acee;
+    font-size: 2em;
+    border-radius: 50%; }
+  .kontakt .bi-facebook {
+    background-color: #3b5998;
+    font-size: 2em;
+    border-radius: 50%; }
+  .kontakt .bi-instagram {
+    background-color: #ac2bac;
+    font-size: 2em;
+    border-radius: 50%; }
