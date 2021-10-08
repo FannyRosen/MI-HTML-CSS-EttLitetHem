@@ -1,138 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/main.css"/>
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+  <body>
     <div class="headcontainer">
-        <div class="py-5 text-center">
-            <h2>Checkout Formulär</h2>
-        </div>  
+      <div class="py-5 text-center">
+        <h2>Checkout Formulär</h2>
+      </div>
     </div>
-        <div class="formcontainer">
-            <h4 class="mb-3">Adress</h4>
-            <form novalidate>
-                <div class="row g-3">
-                    <div class="col-sm-6">
-                        <label for="firstName" class="form-label">Förnamn</label>
-                        <input id="firstName" type="text" class="form-control" placeholder="Förnamn" required>
-                        <div class="invalid-feedback">
-                            Du måste skriva in ett giltigt förnamn.
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="lastName" class="form-label">Efternamn</label>
-                        <input id="lastName" type="text" class="form-control" placeholder="Efternamn" required>
-                        <div class="invalid-feedback">
-                            Du måste skriva in ett giltigt efternamn.
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="phonenumber" class="form-label">Telefonnummer</label>
-                        <input id="userName" type="number" class="form-control" placeholder="xxx-xxx-xxxx" required>
-                        <div class="invalid-feedback">
-                            Du måste skriva in ett giltigt telefonnummer.
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="email" class="form-label">Email</label>
-                        <input id="email" type="" class="form-control" placeholder="@" required>
-                        <div class="invalid-feedback">
-                            Du måste skriva in en giltig emailadress.
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <label for="adress" class="form-label">Adress</label>
-                        <input id="adress" type="text" class="form-control" placeholder="Adress" required>
-                        <div class="invalid-feedback">
-                            Du måste skriva in en giltig adress.
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="postcode" class="form-label">Postkod</label>
-                        <input id="postcode" type="number" class="form-control" placeholder="xxx xx" required>
-                        <div class="invalid-feedback">
-                            Du måste skriva in ett giltigt postnummer.
-                        </div>
-                    </div>
-                    <div class="col-sm-5">
-                        <label for="city" class="form-label">Stad</label>
-                        <input id="city" type="text" class="form-control" placeholder="Stad" required>
-                        <div class="invalid-feedback">
-                            Du måste skriva in en stad.
-                        </div>
-                    </div>
-                    <hr class="my-4">
-                    
-                    <h4 class="mb-3">Payments</h4>
-
-                    <div class="form-check">
-                        <input id="creditCard" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                        <label for="creditCard">Credit Card</label>
-                    </div>
-                    <div class="form-check">
-                        <input id="debitCard" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                        <label for="debitCard">Debit Card</label>
-                    </div>
-                    <div class="form-check">
-                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                        <label for="paypal">PayPal</label>
-                    </div>
-
-
-                    <div class="row my-3 gy-3">
-                        <div class="col-md-6">
-                            Name on Card
-                            <input type="text" class="form-control">
-                            <small class="text-muted">
-                                Full name as displayed on card.
-                            </small>
-                            <div class="invalid-feedback">
-                                Name on card is required.
-                            </div>
-                        </div>  
-                        <div class="col-md-6">
-                            Credit Card Number
-                            <input type="number" class="form-control">
-                            <div class="invalid-feedback">
-                                Credit Card number is required.
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <label for="cc-expire" class="form-label">
-                                Expiration
-                            </label>
-                            <input id="cc-expire" type="number" class="form-control">
-                            <div class="invalid-feedback">
-                                Expiration is required.
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <label for="cc-cvv" class="form-label">
-                                Expiration
-                            </label>
-                            <input id="cc-cvv" type="number" class="form-control">
-                            <div class="invalid-feedback">
-                                CVV is required.
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr class="my-4">
-                    <button class="btn btn-primary">Köp</button>
+    <div class="formcontainer m-5">
+      <h4 class="mb-3">Adress</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">Förnamn</label>
+            <input
+              id="firstName"
+              type="text"
+              class="form-control"
+              placeholder="Förnamn"
+              required
+            />
+            <div class="invalid-feedback">
+              Du måste skriva in ett giltigt förnamn.
             </div>
-        </form>
+          </div>
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Efternamn</label>
+            <input
+              id="lastName"
+              type="text"
+              class="form-control"
+              placeholder="Efternamn"
+              required
+            />
+            <div class="invalid-feedback">
+              Du måste skriva in ett giltigt efternamn.
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <label for="phonenumber" class="form-label">Telefonnummer</label>
+            <input
+              id="phonenumber"
+              type="text"
+              class="form-control"
+              placeholder="xxx-xxx-xxxx"
+              required
+            />
+            <div class="invalid-feedback">
+              Du måste skriva in ett giltigt telefonnummer.
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <label for="email" class="form-label">Email</label>
+            <input
+              id="email"
+              type="text"
+              class="form-control"
+              placeholder="name@example.com"
+              required
+            />
+            <div class="invalid-feedback">
+              Du måste skriva in en giltig emailadress.
+            </div>
+          </div>
+          <div class="col-12">
+            <label for="adress" class="form-label">Adress</label>
+            <input
+              id="adress"
+              type="text"
+              class="form-control"
+              placeholder="Adress"
+              required
+            />
+            <div class="invalid-feedback">
+              Du måste skriva in en giltig adress.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="postcode" class="form-label">Postkod</label>
+            <input
+              id="postcode"
+              type="text"
+              class="form-control"
+              placeholder="xxx xx"
+              required
+            />
+            <div class="invalid-feedback">
+              Du måste skriva in ett giltigt postnummer.
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <label for="city" class="form-label">Stad</label>
+            <input
+              id="city"
+              type="text"
+              class="form-control"
+              placeholder="Stad"
+              required
+            />
+            <div class="invalid-feedback">Du måste skriva in en stad.</div>
+          </div>
+          <hr class="my-4" />
+
+          <h4 class="mb-3">Payments</h4>
+
+          <div class="form-check">
+            <input
+              id="creditCard"
+              name="paymentMethod"
+              type="radio"
+              class="form-check-input"
+              checked
+              required
+            />
+            <label for="creditCard">Credit Card</label>
+          </div>
+          <div class="form-check">
+            <input
+              id="debitCard"
+              name="paymentMethod"
+              type="radio"
+              class="form-check-input"
+              checked
+              required
+            />
+            <label for="debitCard">Debit Card</label>
+          </div>
+          <div class="form-check">
+            <input
+              id="paypal"
+              name="paymentMethod"
+              type="radio"
+              class="form-check-input"
+              checked
+              required
+            />
+            <label for="paypal">PayPal</label>
+          </div>
+
+          <div class="row my-3 gy-3">
+            <div class="col-md-6">
+              Name on Card
+              <input type="text" class="form-control" checked required />
+              <small class="text-muted">
+                Full name as displayed on card.
+              </small>
+              <div class="invalid-feedback">Name on card is required.</div>
+            </div>
+            <div class="col-md-6">
+              Credit Card Number
+              <input type="text" class="form-control" checked required />
+              <div class="invalid-feedback">
+                Credit Card number is required.
+              </div>
+            </div>
+            <div class="col-md-2">
+              <label for="cc-expire" class="form-label"> Expiration </label>
+              <input
+                id="cc-expire"
+                type="text"
+                class="form-control"
+                checked
+                required
+              />
+              <div class="invalid-feedback">Expiration is required.</div>
+            </div>
+            <div class="col-md-2">
+              <label for="cc-cvv" class="form-label"> CVV </label>
+              <input
+                id="cc-cvv"
+                type="text"
+                class="form-control"
+                checked
+                required
+              />
+              <div class="invalid-feedback">CVV is required.</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck2"
+                checked
+                required
+              />
+              <label class="form-check-label" for="invalidCheck2">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+
+          <hr class="col-md-12" />
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
     </div>
-    
+    <script>
+      (function () {
+        "use strict";
+        window.addEventListener(
+          "load",
+          function () {
+            var forms = document.getElementsByClassName("needs-validation");
+            var validation = Array.prototype.filter.call(
+              forms,
+              function (form) {
+                form.addEventListener(
+                  "submit",
+                  function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add("was-validated");
+                  },
+                  false
+                );
+              }
+            );
+          },
+          false
+        );
+      })();
+    </script>
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
