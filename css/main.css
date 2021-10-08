@@ -138,8 +138,13 @@ button:hover {
     height: 100%;
     background-size: cover; }
 
+.bi-arrow-down-circle {
+  color: black;
+  border-radius: 50%;
+  font-size: 1.2em; }
+
 .kontakt {
-  height: 350px;
+  height: 360px;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
@@ -147,12 +152,15 @@ button:hover {
   .kontakt .bi-twitter {
     background-color: #55acee;
     font-size: 2em;
-    border-radius: 50%; }
+    border-radius: 50%;
+    color: white; }
   .kontakt .bi-facebook {
     background-color: #3b5998;
     font-size: 2em;
-    border-radius: 50%; }
+    border-radius: 50%;
+    color: white; }
   .kontakt .bi-instagram {
     background-color: #ac2bac;
     font-size: 2em;
-    border-radius: 50%; }
+    border-radius: 50%;
+    color: white; }
