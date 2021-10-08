@@ -7,10 +7,6 @@ html {
   background-color: #ececec;
 }
 
-.test {
-  background-color: red;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: 100px 1fr 100px 1fr;
@@ -189,8 +185,17 @@ button:hover {
   }
 }
 
+.bi-arrow-down-circle {
+  color: white;
+  font-weight: lighter;
+  position: relative;
+  margin-top: 40px;
+  border-radius: 50%;
+  font-size: 1.5em;
+}
+
 .kontakt {
-  height: 350px;
+  height: 400px;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
@@ -228,4 +233,22 @@ button:hover {
       list-style: none;
     }
   }
+}
+.bi-twitter {
+  background-color: #55acee;
+  font-size: 2em;
+  border-radius: 50%;
+  color: white;
+}
+.bi-facebook {
+  background-color: #3b5998;
+  font-size: 2em;
+  border-radius: 50%;
+  color: white;
+}
+.bi-instagram {
+  background-color: #ac2bac;
+  font-size: 2em;
+  border-radius: 50%;
+  color: white;
 }
