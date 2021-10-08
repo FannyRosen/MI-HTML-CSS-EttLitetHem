@@ -1,9 +1,12 @@
 /*Hannas kod börjar här*/
-body, html {
-    font-size: 12px;
+$font-stack: Arial, Helvetica, sans-serif;
+$primary-color: #ececec;
+$font-size: 12px;
+
+body {
+    font: $font-stack;
+    color: $primary-color;
     height: 100%;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: #ececec;
 }
 
 .grid-container {
@@ -23,34 +26,16 @@ body, html {
     flex-direction: row;
     text-align: center;
     justify-content: space-around;
-
 }
 
 .logo {
-    background-image: url("img/litethjärtagrått.png");
+    background-image: url("Bilder/litethjärtagrått.png");
     width: 26vh;
     height: 20vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-nav ul {
-    padding: 10px;
-    margin:10;
-}
-nav ul > li {
-    list-style: none;  
-}
-
-nav ul > li > a {
-    text-decoration: none;
-    color: rgba(41, 38, 38, 0.815);
-   font-size: 1.2rem;
-}
-
-a:hover {
-    text-decoration: underline;
-} 
 
 .hero {
     grid-area: content;
@@ -58,34 +43,30 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("img/Ev-hero6.jpeg");
+    background-image: url("Bilder/Ev-hero6.jpeg");
     background-size: cover;
     background-position: center;
-
 }
-.hero > p {
+
+p {
     font-size: 2.3rem;
     font-weight: lighter;
     text-align: center;
     color: rgba(255, 255, 255, 0.815);
     align-items: center;
     width: 60%;
-}
+ }
 
 .button {
-    color: rgb(41, 38, 38, 0.815);
+    color: rgba(41, 38, 38, 0.815);
     border-style: none;
     height: 55px;
     width: 110px;
-  
     background-color: rgba(255, 255, 255, 0.637);
-   
+    &:hover { box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        font-size: 18px;}
    }
     
-button:hover {
-   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-   font-size: 18px;
-}
 
 .sidebar {
     grid-area: sidebar;
