@@ -155,20 +155,28 @@ p {
   }
   .om-p {
     font-size: 1em;
-    line-height: 1.8em;
-    margin-bottom: 15px;
   }
-  .elsa-con {
-    height: 800px;
-  }
-  .elsa-img {
-    background-image: url(../Bilder/Elsa.jpeg);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-  }
+
+  // .elsa-con {
+  //   height: 800px;
+  // }
+  // .elsa-img {
+  //   background-image: url(../Bilder/Elsa.jpeg);
+  //   width: 100%;
+  //   height: 100%;
+  //   background-size: cover;
+  // }
 }
 
+// .elsa-con {
+//   height: 400px;
+// }
+// .elsa-img {
+//   background-image: url(../Bilder/Elsa.jpeg);
+//   width: 400px;
+//   height: 400px;
+//   background-size: cover;
+// }
 .bi-arrow-down-circle {
   font-weight: lighter;
   position: relative;
@@ -183,41 +191,34 @@ p {
   display: flex;
   flex-direction: column;
   align-items: left;
-}
-.kon-con {
-  width: 100%;
-  ul {
-    list-style: none;
+
+  .bi-geo-alt,
+  .bi-shop,
+  .bi-telephone,
+  .bi-envelope,
+  .bi-arrow-down-circle {
+    color: black;
+  }
+
+  .bi-twitter,
+  .bi-facebook,
+  .bi-instagram {
+    font-size: 2em;
+    border-radius: 50%;
+  }
+
+  .bi-twitter {
+    color: #55acee;
+  }
+
+  .bi-facebook {
+    color: #3b5998;
+  }
+
+  .bi-instagram {
+    color: #ac2bac;
   }
 }
-
-.bi-geo-alt,
-.bi-shop,
-.bi-telephone,
-.bi-envelope,
-.bi-arrow-down-circle {
-  color: black;
-}
-
-.bi-twitter,
-.bi-facebook,
-.bi-instagram {
-  font-size: 2em;
-  border-radius: 50%;
-}
-
-.bi-twitter {
-  color: #55acee;
-}
-
-.bi-facebook {
-  color: #3b5998;
-}
-
-.bi-instagram {
-  color: #ac2bac;
-}
-
 .Om-p {
   color: black;
   font-size: 1.2em;
