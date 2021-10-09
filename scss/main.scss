@@ -170,7 +170,6 @@ p {
 }
 
 .bi-arrow-down-circle {
-  color: white;
   font-weight: lighter;
   position: relative;
   margin-top: 40px;
@@ -179,62 +178,44 @@ p {
 }
 
 .kontakt {
-  height: 400px;
+  height: 500px;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: left;
-  .icon-con {
-    width: 100%;
-    text-align: left;
-    position: relative;
-    .icon {
-      list-style: none;
-      .btn-primary {
-        background-color: transparent;
-        border-color: transparent;
-      }
-      .bi-twitter {
-        background-color: #55acee;
-        font-size: 2em;
-        border-radius: 50%;
-      }
-      .bi-facebook {
-        background-color: #3b5998;
-        font-size: 2em;
-        border-radius: 50%;
-      }
-      .bi-instagram {
-        background-color: #ac2bac;
-        font-size: 2em;
-        border-radius: 50%;
-      }
-    }
-  }
-  .kon-con {
-    width: 100%;
-    ul {
-      list-style: none;
-    }
+}
+.kon-con {
+  width: 100%;
+  ul {
+    list-style: none;
   }
 }
-.bi-twitter {
-  background-color: #55acee;
-  font-size: 2em;
-  border-radius: 50%;
-  color: white;
+
+.bi-geo-alt,
+.bi-shop,
+.bi-telephone,
+.bi-envelope,
+.bi-arrow-down-circle {
+  color: black;
 }
-.bi-facebook {
-  background-color: #3b5998;
-  font-size: 2em;
-  border-radius: 50%;
-  color: white;
-}
+
+.bi-twitter,
+.bi-facebook,
 .bi-instagram {
-  background-color: #ac2bac;
   font-size: 2em;
   border-radius: 50%;
-  color: white;
+}
+
+.bi-twitter {
+  color: #55acee;
+}
+
+.bi-facebook {
+  color: #3b5998;
+}
+
+.bi-instagram {
+  color: #ac2bac;
 }
 
 .Om-p {
@@ -245,8 +226,4 @@ p {
 .Kont-P {
   color: black;
   font-size: 1.2em;
-}
-
-.bi {
-  color: black;
 }
