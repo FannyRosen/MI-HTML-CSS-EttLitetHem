@@ -2,8 +2,11 @@
 /*Hannas kod börjar här*/
 body {
   font: Arial, Helvetica, sans-serif;
-  color: #ececec;
+  color: #3d3d3d;
+  background-color: #ececec;
   height: 100%;
+  font-size: 12px;
+  font-weight: lighter;
 }
 
 .grid-container {
@@ -11,7 +14,7 @@ body {
   grid-template-columns: 100px 1fr 100px 1fr;
   grid-template-rows: 25vh 50vh 20vh;
   grid-gap: 1em;
-  grid-template-areas: "header header header header" "content content content content" "sidebar sidebar sidebar sidebar";
+  grid-template-areas: "header header header header" "content content content content";
 }
 
 .header {
@@ -20,15 +23,6 @@ body {
   flex-direction: row;
   text-align: center;
   justify-content: space-around;
-}
-
-.logo {
-  background-image: url("Bilder/litethjärtagrått.png");
-  width: 26vh;
-  height: 20vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .hero {
@@ -44,7 +38,6 @@ body {
 
 p {
   font-size: 2.3rem;
-  font-weight: lighter;
   text-align: center;
   color: rgba(255, 255, 255, 0.815);
   align-items: center;
@@ -61,10 +54,6 @@ p {
 .button:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   font-size: 18px;
-}
-
-.sidebar {
-  grid-area: sidebar;
 }
 
 /*Fannys kod börjar här*/
