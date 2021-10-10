@@ -24,22 +24,22 @@ body {
 }
 
 .header {
-    grid-area: header;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-around;
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
 }
 
 .hero {
-    grid-area: content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("Bilder/Ev-hero6.jpeg");
-    background-size: cover;
-    background-position: center;
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("Bilder/Ev-hero6.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 p {
@@ -221,4 +221,18 @@ p {
   font-size: 2em;
   border-radius: 50%;
   color: white;
+}
+
+.Om-p {
+  color: black;
+  font-size: 1.2em;
+}
+
+.Kont-P {
+  color: black;
+  font-size: 1.2em;
+}
+
+.bi {
+  color: black;
 }
