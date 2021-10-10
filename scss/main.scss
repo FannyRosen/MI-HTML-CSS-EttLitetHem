@@ -1,12 +1,16 @@
 /*Hannas kod börjar här*/
 $font-stack: Arial, Helvetica, sans-serif;
-$primary-color: #ececec;
-$font-size: 12px;
+$background-color: #ececec;
+$text-color: #3d3d3d;
+
 
 body {
-  font: $font-stack;
-  color: $primary-color;
-  height: 100%;
+    font: $font-stack;
+    color: $text-color;
+    background-color: $background-color;
+    height: 100%;
+    font-size: 12px;
+    font-weight: lighter;
 }
 
 .grid-container {
@@ -16,8 +20,7 @@ body {
   grid-gap: 1em;
   grid-template-areas:
     "header header header header"
-    "content content content content"
-    "sidebar sidebar sidebar sidebar";
+    "content content content content";
 }
 
 .header {
@@ -26,15 +29,6 @@ body {
   flex-direction: row;
   text-align: center;
   justify-content: space-around;
-}
-
-.logo {
-  background-image: url("Bilder/litethjärtagrått.png");
-  width: 26vh;
-  height: 20vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .hero {
@@ -49,30 +43,22 @@ body {
 }
 
 p {
-  font-size: 2.3rem;
-  font-weight: lighter;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.815);
-  align-items: center;
-  width: 60%;
-}
+    font-size: 2.3rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.815);
+    align-items: center;
+    width: 60%;
+ }
 
 .button {
-  color: rgba(41, 38, 38, 0.815);
-  border-style: none;
-  height: 55px;
-  width: 110px;
-  background-color: rgba(255, 255, 255, 0.637);
-  &:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-      0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    font-size: 18px;
-  }
-}
-
-.sidebar {
-  grid-area: sidebar;
-}
+    color: rgba(41, 38, 38, 0.815);
+    border-style: none;
+    height: 55px;
+    width: 110px;
+    background-color: rgba(255, 255, 255, 0.637);
+    &:hover { box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        font-size: 18px;}
+   }
 
 /*Fannys kod börjar här*/
 .products {
