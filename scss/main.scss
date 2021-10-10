@@ -142,22 +142,6 @@ p {
 }
 
 /*Rasmus kod börjar här*/
-.om {
-  height: 20%;
-  width: 100%;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  .om-h3 {
-    font-size: 1.4em;
-    text-transform: uppercase;
-    text-decoration-line: underline;
-  }
-  .om-p {
-    font-size: 1em;
-  }
-}
-
 .bi-arrow-down-circle {
   font-weight: lighter;
   position: relative;
@@ -170,12 +154,21 @@ p {
   width: 100%;
 }
 
-.kontakt {
-  height: 20%;
+.om {
   border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
+  .om-p {
+    color: black;
+    font-size: 1em;
+    width: 100%;
+    line-height: 2em;
+  }
+
+  .om-h2 {
+    color: black;
+  }
+}
+.kontakt {
+  border: 1px solid black;
 
   .bi-geo-alt,
   .bi-shop,
@@ -204,13 +197,8 @@ p {
     color: #ac2bac;
   }
 }
-.Om-p {
-  color: black;
-  font-size: 1.2em;
-}
 
 .Kont-P {
   color: black;
   font-size: 1.2em;
-  width: 100%;
 }
