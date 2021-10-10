@@ -135,7 +135,7 @@ p {
 
 /*Rasmus kod börjar här*/
 .om {
-  height: 400px;
+  height: 20%;
   width: 100%;
   border: 1px solid black;
   display: flex;
@@ -158,8 +158,12 @@ p {
   font-size: 1.5em;
 }
 
+.elsa-bild {
+  width: 100%;
+}
+
 .kontakt {
-  height: 500px;
+  height: 20%;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
@@ -196,4 +200,5 @@ p {
 .Kont-P {
   color: black;
   font-size: 1.2em;
+  width: 100%;
 }
