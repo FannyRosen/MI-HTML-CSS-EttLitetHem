@@ -226,3 +226,9 @@ body {
     font-size: 1.2em;
   }
 }
+/*tacksida*/
+.messagecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
