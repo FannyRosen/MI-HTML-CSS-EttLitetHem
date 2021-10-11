@@ -92,7 +92,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /*Rasmus kod börjar här*/
 }
 .productwrapper .container-1,
 .productwrapper .container-2,
@@ -110,17 +109,17 @@ body {
 .productwrapper p {
   margin: 5px;
 }
-.productwrapper p button {
+.productwrapper button {
   color: #3d3d3d;
 }
-.productwrapper p .img-1,
-.productwrapper p .img-2,
-.productwrapper p .img-3,
-.productwrapper p .img-4,
-.productwrapper p .img-5,
-.productwrapper p .img-6,
-.productwrapper p .img-7,
-.productwrapper p .img-8 {
+.productwrapper .img-1,
+.productwrapper .img-2,
+.productwrapper .img-3,
+.productwrapper .img-4,
+.productwrapper .img-5,
+.productwrapper .img-6,
+.productwrapper .img-7,
+.productwrapper .img-8 {
   width: 30vh;
   height: 30vh;
   background-position: center;
@@ -128,78 +127,84 @@ body {
   background-size: cover;
   margin-bottom: 15px;
 }
-.productwrapper p .img-1 {
+.productwrapper .img-1 {
   background-image: url(../Bilder/kopp-blue.jpeg);
 }
-.productwrapper p .img-2 {
+.productwrapper .img-2 {
   background-image: url(../Bilder/kopp-lightgrey.jpeg);
 }
-.productwrapper p .img-3 {
+.productwrapper .img-3 {
   background-image: url(../Bilder/kopp-grey.jpeg);
 }
-.productwrapper p .img-4 {
+.productwrapper .img-4 {
   background-image: url(../Bilder/kopp-turkos.jpeg);
 }
-.productwrapper p .img-5 {
+.productwrapper .img-5 {
   background-image: url(../Bilder/vas-smal-vit.jpeg);
 }
-.productwrapper p .img-6 {
+.productwrapper .img-6 {
   background-image: url(../Bilder/vas-rounddarkgreen.jpeg);
 }
-.productwrapper p .img-7 {
+.productwrapper .img-7 {
   background-image: url(../Bilder/vas-largegrey.jpeg);
 }
-.productwrapper p .img-8 {
+.productwrapper .img-8 {
   background-image: url(../Bilder/vas-largewhite.jpeg);
 }
-.productwrapper .bi-arrow-down-circle {
+
+/*Rasmus kod börjar här*/
+.bi-arrow-down-circle {
   font-weight: lighter;
   position: relative;
   margin-top: 40px;
   border-radius: 50%;
   font-size: 1.5em;
 }
-.productwrapper .elsa-bild {
+
+.elsa-bild {
   width: 100%;
 }
-.productwrapper .om {
+
+.om {
   border: 1px solid black;
 }
-.productwrapper .om .om-p {
+.om .om-p {
   color: black;
   font-size: 1em;
   width: 100%;
   line-height: 2em;
 }
-.productwrapper .om .om-h2 {
+.om .om-h2 {
   color: black;
 }
-.productwrapper .kontakt {
+
+.kontakt {
   border: 1px solid black;
 }
-.productwrapper .kontakt .bi-geo-alt,
-.productwrapper .kontakt .bi-shop,
-.productwrapper .kontakt .bi-telephone,
-.productwrapper .kontakt .bi-envelope,
-.productwrapper .kontakt .bi-arrow-down-circle {
+.kontakt .bi-geo-alt,
+.kontakt .bi-shop,
+.kontakt .bi-telephone,
+.kontakt .bi-envelope,
+.kontakt .bi-arrow-down-circle {
   color: black;
 }
-.productwrapper .kontakt .bi-twitter,
-.productwrapper .kontakt .bi-facebook,
-.productwrapper .kontakt .bi-instagram {
+.kontakt .bi-twitter,
+.kontakt .bi-facebook,
+.kontakt .bi-instagram {
   font-size: 2em;
   border-radius: 50%;
 }
-.productwrapper .kontakt .bi-twitter {
+.kontakt .bi-twitter {
   color: #55acee;
 }
-.productwrapper .kontakt .bi-facebook {
+.kontakt .bi-facebook {
   color: #3b5998;
 }
-.productwrapper .kontakt .bi-instagram {
+.kontakt .bi-instagram {
   color: #ac2bac;
 }
-.productwrapper .Kont-P {
+
+.Kont-P {
   color: black;
   font-size: 1.2em;
 }
@@ -209,4 +214,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
