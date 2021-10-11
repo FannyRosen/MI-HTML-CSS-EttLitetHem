@@ -87,6 +87,13 @@ p {
   p {
     margin: 5px;
   }
+  button {
+    color: $text-color;
+  }
+  .btn btn-secondary {
+    background-color: green;
+    color: hotpink;
+  }
 
   .img-1,
   .img-2,

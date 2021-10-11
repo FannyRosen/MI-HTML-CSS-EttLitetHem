@@ -82,6 +82,13 @@ p {
 .productwrapper p {
   margin: 5px;
 }
+.productwrapper button {
+  color: #3d3d3d;
+}
+.productwrapper .btn btn-secondary {
+  background-color: green;
+  color: hotpink;
+}
 .productwrapper .img-1,
 .productwrapper .img-2,
 .productwrapper .img-3,
