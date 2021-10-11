@@ -2,6 +2,7 @@
 $font-stack: Arial, Helvetica, sans-serif;
 $background-color: #ececec;
 $text-color: #3d3d3d;
+$hero-color: #000000;
 
 body {
   font: $font-stack;
@@ -15,7 +16,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 100px 1fr 100px 1fr;
-  grid-template-rows: 25vh 50vh 20vh;
+  grid-template-rows: 25vh 50vh 25vh;
   grid-gap: 1em;
   grid-template-areas:
     "header header header header"
@@ -34,31 +35,61 @@ body {
   grid-area: content;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
+  align-items: flex-end;
+  text-align: center;
   align-items: center;
   background-image: url("../Bilder/Ev-hero6.jpeg");
   background-size: cover;
   background-position: center;
-}
 
-p {
-  font-size: 2.3rem;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.815);
-  align-items: center;
-  width: 60%;
+  p {
+    font-size: 2.3rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.815);
+    align-items: center;
+    width: 60%;
+  }
+
+  .button {
+    color: rgba(41, 38, 38, 0.815);
+    border-style: none;
+    height: 55px;
+    width: 110px;
+    background-color: rgba(255, 255, 255, 0.637);
+    &:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      font-size: 18px;
+    }
+  }
+
+  .hero-text {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 26px;
+    border-radius: 1%;
+    font-size: 1.5rem;
+    color: $hero-color;
+    background-color: #ecececd3;
+  }
 }
 
 .button {
-  color: rgba(41, 38, 38, 0.815);
+  color: $text-color;
+  background-color: #ececece8;
+  font-weight: lighter;
   border-style: none;
-  height: 55px;
-  width: 110px;
-  background-color: rgba(255, 255, 255, 0.637);
+  border-radius: 1%;
+  font-size: 1rem;
+  height: 40px;
+  width: 80px;
+  margin: 20px 20px 30px 20px;
+  color: $hero-color;
   &:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
       0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
