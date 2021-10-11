@@ -37,6 +37,24 @@ body {
   background-size: cover;
   background-position: center;
 }
+.hero p {
+  font-size: 2.3rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.815);
+  align-items: center;
+  width: 60%;
+}
+.hero .button {
+  color: rgba(41, 38, 38, 0.815);
+  border-style: none;
+  height: 55px;
+  width: 110px;
+  background-color: rgba(255, 255, 255, 0.637);
+}
+.hero .button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  font-size: 18px;
+}
 .hero .hero-text {
   width: 80%;
   padding: 20px;
@@ -67,12 +85,14 @@ body {
 /*Fannys kod börjar här*/
 .products {
   text-align: center;
+  color: #3d3d3d;
 }
 
 .productwrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /*Rasmus kod börjar här*/
 }
 .productwrapper .container-1,
 .productwrapper .container-2,
@@ -90,21 +110,17 @@ body {
 .productwrapper p {
   margin: 5px;
 }
-.productwrapper button {
+.productwrapper p button {
   color: #3d3d3d;
 }
-.productwrapper .btn btn-secondary {
-  background-color: green;
-  color: hotpink;
-}
-.productwrapper .img-1,
-.productwrapper .img-2,
-.productwrapper .img-3,
-.productwrapper .img-4,
-.productwrapper .img-5,
-.productwrapper .img-6,
-.productwrapper .img-7,
-.productwrapper .img-8 {
+.productwrapper p .img-1,
+.productwrapper p .img-2,
+.productwrapper p .img-3,
+.productwrapper p .img-4,
+.productwrapper p .img-5,
+.productwrapper p .img-6,
+.productwrapper p .img-7,
+.productwrapper p .img-8 {
   width: 30vh;
   height: 30vh;
   background-position: center;
@@ -112,84 +128,84 @@ body {
   background-size: cover;
   margin-bottom: 15px;
 }
-.productwrapper .img-1 {
+.productwrapper p .img-1 {
   background-image: url(../Bilder/kopp-blue.jpeg);
 }
-.productwrapper .img-2 {
+.productwrapper p .img-2 {
   background-image: url(../Bilder/kopp-lightgrey.jpeg);
 }
-.productwrapper .img-3 {
+.productwrapper p .img-3 {
   background-image: url(../Bilder/kopp-grey.jpeg);
 }
-.productwrapper .img-4 {
+.productwrapper p .img-4 {
   background-image: url(../Bilder/kopp-turkos.jpeg);
 }
-.productwrapper .img-5 {
+.productwrapper p .img-5 {
   background-image: url(../Bilder/vas-smal-vit.jpeg);
 }
-.productwrapper .img-6 {
+.productwrapper p .img-6 {
   background-image: url(../Bilder/vas-rounddarkgreen.jpeg);
 }
-.productwrapper .img-7 {
+.productwrapper p .img-7 {
   background-image: url(../Bilder/vas-largegrey.jpeg);
 }
-.productwrapper .img-8 {
+.productwrapper p .img-8 {
   background-image: url(../Bilder/vas-largewhite.jpeg);
 }
-
-/*Rasmus kod börjar här*/
-.bi-arrow-down-circle {
+.productwrapper .bi-arrow-down-circle {
   font-weight: lighter;
   position: relative;
   margin-top: 40px;
   border-radius: 50%;
   font-size: 1.5em;
 }
-
-.elsa-bild {
+.productwrapper .elsa-bild {
   width: 100%;
 }
-
-.om {
+.productwrapper .om {
   border: 1px solid black;
 }
-.om .om-p {
+.productwrapper .om .om-p {
   color: black;
   font-size: 1em;
   width: 100%;
   line-height: 2em;
 }
-.om .om-h2 {
+.productwrapper .om .om-h2 {
   color: black;
 }
-
-.kontakt {
+.productwrapper .kontakt {
   border: 1px solid black;
 }
-.kontakt .bi-geo-alt,
-.kontakt .bi-shop,
-.kontakt .bi-telephone,
-.kontakt .bi-envelope,
-.kontakt .bi-arrow-down-circle {
+.productwrapper .kontakt .bi-geo-alt,
+.productwrapper .kontakt .bi-shop,
+.productwrapper .kontakt .bi-telephone,
+.productwrapper .kontakt .bi-envelope,
+.productwrapper .kontakt .bi-arrow-down-circle {
   color: black;
 }
-.kontakt .bi-twitter,
-.kontakt .bi-facebook,
-.kontakt .bi-instagram {
+.productwrapper .kontakt .bi-twitter,
+.productwrapper .kontakt .bi-facebook,
+.productwrapper .kontakt .bi-instagram {
   font-size: 2em;
   border-radius: 50%;
 }
-.kontakt .bi-twitter {
+.productwrapper .kontakt .bi-twitter {
   color: #55acee;
 }
-.kontakt .bi-facebook {
+.productwrapper .kontakt .bi-facebook {
   color: #3b5998;
 }
-.kontakt .bi-instagram {
+.productwrapper .kontakt .bi-instagram {
   color: #ac2bac;
 }
-
-.Kont-P {
+.productwrapper .Kont-P {
   color: black;
   font-size: 1.2em;
+}
+
+.messagecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
