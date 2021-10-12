@@ -103,17 +103,37 @@ body {
 .productwrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   div[class^="container"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 15px;
-    width: 90%;
+    width: 80%;
+    margin-top: 30px;
 
     img[class^="img"] {
-      width: 85%;
+      width: 100%;
+    }
+    button[id^="productname"] {
+      text-decoration: none;
+      color: $text-color;
+      margin: 10px;
+
+      &:hover {
+        color: rgb(92, 100, 92);
+      }
+      &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+      }
     }
   }
 }
@@ -219,40 +239,53 @@ button {
     color: black;
     font-size: 1.2em;
   }
+}
 
-  @media screen and (min-width: 786px) {
-    .productwrapper {
+@media screen and (min-width: 786px) {
+  .productwrapper {
+    width: 100%;
+    .one,
+    .two {
       display: flex;
       flex-direction: row;
       justify-content: center;
-    }
-    .kontakt {
-      height: 40vh;
-    }
 
-    .elsa-bild {
-      width: 100%;
-      height: 60vh;
-    }
-    .om {
-      .om-p {
-        color: black;
-        width: 100%;
-        line-height: 2em;
+      div[class^="container"] {
+        width: 20%;
+
+        img[class^="img"] {
+          width: 100%;
+        }
       }
     }
   }
 
-  @media screen and (min-width: 1200) {
-    .kontakt {
-      height: 30vh;
-    }
+  .kontakt {
+    height: 40vh;
+  }
 
-    .elsa-bild {
-      width: 90%;
-      height: 60vh;
-      position: relative;
-      margin-left: -5%;
+  .elsa-bild {
+    width: 100%;
+    height: 60vh;
+  }
+  .om {
+    .om-p {
+      color: black;
+      width: 100%;
+      line-height: 2em;
     }
+  }
+}
+
+@media screen and (min-width: 1200) {
+  .kontakt {
+    height: 30vh;
+  }
+
+  .elsa-bild {
+    width: 90%;
+    height: 60vh;
+    position: relative;
+    margin-left: -5%;
   }
 }

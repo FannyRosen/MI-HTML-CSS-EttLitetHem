@@ -131,17 +131,35 @@ body {
 .productwrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.productwrapper section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .productwrapper div[class^=container] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 15px;
-  width: 90%;
+  width: 80%;
+  margin-top: 30px;
 }
 .productwrapper div[class^=container] img[class^=img] {
-  width: 85%;
+  width: 100%;
+}
+.productwrapper div[class^=container] button[id^=productname] {
+  text-decoration: none;
+  color: #3d3d3d;
+  margin: 10px;
+}
+.productwrapper div[class^=container] button[id^=productname]:hover {
+  color: #5c645c;
+}
+.productwrapper div[class^=container] button[id^=productname]:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 p {
@@ -238,30 +256,47 @@ button {
   color: black;
   font-size: 1.2em;
 }
+
 @media screen and (min-width: 786px) {
-  .kontakt .productwrapper {
+  .productwrapper {
+    width: 100%;
+  }
+  .productwrapper .one,
+.productwrapper .two {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
   }
-  .kontakt .kontakt {
+  .productwrapper .one div[class^=container],
+.productwrapper .two div[class^=container] {
+    width: 20%;
+  }
+  .productwrapper .one div[class^=container] img[class^=img],
+.productwrapper .two div[class^=container] img[class^=img] {
+    width: 100%;
+  }
+
+  .kontakt {
     height: 40vh;
   }
-  .kontakt .elsa-bild {
+
+  .elsa-bild {
     width: 100%;
     height: 60vh;
   }
-  .kontakt .om .om-p {
+
+  .om .om-p {
     color: black;
     width: 100%;
     line-height: 2em;
   }
 }
 @media screen and (min-width: 1200) {
-  .kontakt .kontakt {
+  .kontakt {
     height: 30vh;
   }
-  .kontakt .elsa-bild {
+
+  .elsa-bild {
     width: 90%;
     height: 60vh;
     position: relative;
