@@ -154,7 +154,7 @@ body {
   margin: 10px;
 }
 .productwrapper div[class^=container] button[id^=productname]:hover {
-  color: #5c645c;
+  color: #7e8d7e;
 }
 .productwrapper div[class^=container] button[id^=productname]:focus {
   outline: none !important;
@@ -253,6 +253,7 @@ button {
   .productwrapper .one div[class^=container],
 .productwrapper .two div[class^=container] {
     width: 20%;
+    margin: 20px;
   }
   .productwrapper .one div[class^=container] img[class^=img],
 .productwrapper .two div[class^=container] img[class^=img] {

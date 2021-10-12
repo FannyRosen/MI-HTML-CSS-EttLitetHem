@@ -1,3 +1,16 @@
+
+.modal-body{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 10px;
+
+    .modal-img{
+      width: 100%;
+    }
+}
+
+/*
 .varukorg-container{
     display: grid;
     grid-template-columns: 100px 1fr 100px;
@@ -29,13 +42,4 @@
       height: 40vh;
       width: 20vh;
     }
-    /*tacksida*/
-    .messagecontainer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background-color: yellowgreen;
-      font-size: 1,2rem;
-    }
+    

@@ -128,7 +128,7 @@ body {
       margin: 10px;
 
       &:hover {
-        color: rgb(92, 100, 92);
+        color: rgb(126, 141, 126);
       }
       &:focus {
         outline: none !important;
@@ -235,6 +235,7 @@ button {
 
       div[class^="container"] {
         width: 20%;
+        margin: 20px;
 
         img[class^="img"] {
           width: 100%;
