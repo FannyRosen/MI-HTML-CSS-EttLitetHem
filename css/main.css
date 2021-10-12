@@ -158,14 +158,6 @@ body {
 }
 
 /*Rasmus kod börjar här*/
-.bi-arrow-down-circle {
-  font-weight: lighter;
-  position: relative;
-  margin-top: 40px;
-  border-radius: 50%;
-  font-size: 1.5em;
-}
-
 .elsa-bild {
   width: 90%;
   height: 58vh;
@@ -178,7 +170,7 @@ body {
 }
 .om .om-p {
   color: black;
-  font-size: 1em;
+  font-size: 1rem;
   width: 100%;
   line-height: 2em;
   position: relative;
