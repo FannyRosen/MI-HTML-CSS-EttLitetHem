@@ -12,7 +12,7 @@ body {
   background-color: $background-color;
   height: 100%;
   font-size: 12px;
-  font-weight: lighter;
+  font-weight: lighter; 
 }
 
 .grid-container {
@@ -100,43 +100,14 @@ body {
   text-align: center;
   color: $text-color;
 }
-.productwrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
 
-  section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
   div[class^="container"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    margin-top: 30px;
+   
 
-    img[class^="img"] {
-      width: 100%;
-    }
-    button[id^="productname"] {
-      text-decoration: none;
-      color: $text-color;
-      margin: 10px;
-
-      &:hover {
-        color: rgb(92, 100, 92);
-      }
-      &:focus {
-        outline: none !important;
-        box-shadow: none !important;
-      }
-    }
-  }
-}
 
 p {
   margin: 5px;
@@ -208,7 +179,7 @@ button {
   }
 }
 
-@media screen and (min-width: 786px) {
+  @media screen and (min-width: 786px) {
   /*Hannas kod börjar här*/
   .grid-container {
     display: grid;
@@ -223,50 +194,30 @@ button {
 
   .container-fluid {
     flex-direction: column;
-  }
+  }  
 
-  .productwrapper {
-    width: 100%;
-    .one,
-    .two {
       display: flex;
       flex-direction: row;
       justify-content: center;
-
-      div[class^="container"] {
-        width: 20%;
-
-        img[class^="img"] {
-          width: 100%;
-        }
-      }
+  
     }
-  }
 
-  .kont-P {
-    color: black;
-    font-size: 1.2em;
   }
   .kontakt {
     height: 25vh;
   }
 
-  @media screen and (min-width: 1200) {
     .kontakt {
       height: 30vh;
     }
 
-    .elsa-bild {
-      width: 75%;
-      height: 60vh;
-    }
-    .om {
-      .om-p {
-        color: black;
-        width: 100%;
-        line-height: 2em;
-        line-height: 1.8rem;
-      }
-    }
+  .elsa-bild {
+    width: 75%;
+    height: 60vh;
   }
+  .om {
+    .om-p {
+      color: black;
+      line-height: 1.8rem; 
+}
 }
