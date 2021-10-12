@@ -152,23 +152,14 @@ button {
 }
 
 /*Rasmus kod börjar här*/
-.bi-arrow-down-circle {
-  font-weight: lighter;
-  position: relative;
-  margin-top: 40px;
-  border-radius: 50%;
-  font-size: 1.5em;
-}
-
 .anchor {
   text-decoration: none;
   color: black;
 }
 
-/*Rasmus kod börjar här*/
 .elsa-bild {
   width: 90%;
-  height: 58vh;
+  height: 60vh;
   position: relative;
   margin-left: 5%;
 }
@@ -179,10 +170,10 @@ button {
 .om .om-p {
   color: black;
   font-size: 0.9rem;
-  width: 100%;
+  width: 98%;
   line-height: 1.6rem;
   position: relative;
-  margin-left: 2%;
+  margin-left: 1.5%;
 }
 .om .om-h2 {
   color: black;
@@ -192,7 +183,7 @@ button {
 
 .kontakt {
   border: 1px solid black;
-  height: 75vh;
+  height: 70vh;
 }
 .kontakt .bi-geo-alt,
 .kontakt .bi-shop,
@@ -200,42 +191,22 @@ button {
 .kontakt .bi-envelope,
 .kontakt .bi-arrow-down-circle {
   color: black;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
-.kontakt .kontakt {
-  border: 1px solid black;
-}
-.kontakt .kontakt .bi-geo-alt,
-.kontakt .kontakt .bi-shop,
-.kontakt .kontakt .bi-telephone,
-.kontakt .kontakt .bi-envelope,
-.kontakt .kontakt .bi-arrow-down-circle {
-  color: black;
-}
-.kontakt .kontakt .bi-twitter,
-.kontakt .kontakt .bi-facebook,
-.kontakt .kontakt .bi-instagram {
+.kontakt .bi-twitter,
+.kontakt .bi-facebook,
+.kontakt .bi-instagram {
   font-size: 2rem;
   border-radius: 50%;
 }
-.kontakt .kontakt .bi-twitter,
-.kontakt .kontakt .bi-facebook,
-.kontakt .kontakt .bi-instagram {
-  font-size: 2em;
-  border-radius: 50%;
-}
-.kontakt .kontakt .bi-twitter {
+.kontakt .bi-twitter {
   color: #55acee;
 }
-.kontakt .kontakt .bi-facebook {
+.kontakt .bi-facebook {
   color: #3b5998;
 }
-.kontakt .kontakt .bi-instagram {
+.kontakt .bi-instagram {
   color: #ac2bac;
-}
-.kontakt .Kont-P {
-  color: black;
-  font-size: 1.2em;
 }
 
 @media screen and (min-width: 786px) {
@@ -252,13 +223,6 @@ button {
     flex-direction: column;
   }
 
-  .hero > p p {
-    font-size: 3rem;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.815);
-    align-items: center;
-  }
-
   /*Fannys kod börjar här*/
   .productwrapper {
     display: flex;
@@ -270,19 +234,19 @@ button {
   .kontakt {
     height: 40vh;
   }
-
-  .elsa-bild {
-    width: 100%;
-    height: 60vh;
+}
+@media screen and (min-width: 786px) and (min-width: 786px) {
+  .productwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
-  .om .om-p {
-    color: black;
-    width: 100%;
-    line-height: 2em;
+  .kontakt {
+    height: 25vh;
   }
 }
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 786px) and (min-width: 786px) and (min-width: 1200) {
   /*Hannas kod börjar här*/
   /*Fannyss kod börjar här*/
   /*Rasmus kod börjar här*/
@@ -291,9 +255,12 @@ button {
   }
 
   .elsa-bild {
-    width: 90%;
+    width: 75%;
     height: 60vh;
-    position: relative;
-    margin-left: -5%;
+  }
+
+  .om .om-p {
+    color: black;
+    line-height: 1.8rem;
   }
 }
