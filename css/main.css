@@ -230,7 +230,7 @@ body {
 
 .kontakt {
   border: 1px solid black;
-  height: 72vh;
+  height: 75vh;
 }
 .kontakt .bi-geo-alt,
 .kontakt .bi-shop,
@@ -238,12 +238,12 @@ body {
 .kontakt .bi-envelope,
 .kontakt .bi-arrow-down-circle {
   color: black;
-  font-size: 2em;
+  font-size: 2.4em;
 }
 .kontakt .bi-twitter,
 .kontakt .bi-facebook,
 .kontakt .bi-instagram {
-  font-size: 2em;
+  font-size: 2.4em;
   border-radius: 50%;
 }
 .kontakt .bi-twitter {
@@ -263,7 +263,7 @@ body {
 
 @media screen and (min-width: 786px) {
   .kontakt {
-    height: 30vh;
+    height: 40vh;
   }
 
   .elsa-bild {
@@ -273,7 +273,6 @@ body {
 
   .om .om-p {
     color: black;
-    font-size: 1em;
     width: 100%;
     line-height: 2em;
   }
