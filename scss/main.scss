@@ -164,6 +164,11 @@ body {
   }
 }
 
+.anchor {
+  text-decoration: none;
+  color: black;
+}
+
 /*Rasmus kod börjar här*/
 .bi-arrow-down-circle {
   font-weight: lighter;
@@ -174,7 +179,10 @@ body {
 }
 
 .elsa-bild {
-  width: 100%;
+  width: 90%;
+  height: 58vh;
+  position: relative;
+  margin-left: 5%;
 }
 
 .om {
@@ -184,14 +192,19 @@ body {
     font-size: 1em;
     width: 100%;
     line-height: 2em;
+    position: relative;
+    margin-left: 2%;
   }
 
   .om-h2 {
     color: black;
+    position: relative;
+    margin-left: 2%;
   }
 }
 .kontakt {
   border: 1px solid black;
+  height: 72vh;
 
   .bi-geo-alt,
   .bi-shop,
@@ -199,6 +212,7 @@ body {
   .bi-envelope,
   .bi-arrow-down-circle {
     color: black;
+    font-size: 2em;
   }
 
   .bi-twitter,
@@ -233,4 +247,40 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+@media screen and (min-width: 786px) {
+  .kontakt {
+    height: 30vh;
+  }
+
+  .elsa-bild {
+    width: 110%;
+    height: 60vh;
+  }
+  .om {
+    .om-p {
+      color: black;
+      font-size: 1em;
+      width: 100%;
+      line-height: 2em;
+    }
+
+    .om-h2 {
+      color: salmon;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .kontakt {
+    height: 30vh;
+  }
+
+  .elsa-bild {
+    width: 90%;
+    height: 60vh;
+    position: relative;
+    margin-left: -5%;
+  }
 }
