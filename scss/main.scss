@@ -4,8 +4,6 @@ $background-color: #ececec;
 $text-color: #3d3d3d;
 $hero-color: #000000;
 
-@import "../scss/modal";
-
 body {
   font: $font-stack;
   color: $text-color;
@@ -79,6 +77,10 @@ body {
 .products {
   text-align: center;
   color: $text-color;
+
+  h2 {
+    font-weight: lighter;
+  }
 }
 .productwrapper {
   display: flex;
@@ -106,9 +108,11 @@ body {
       text-decoration: none;
       color: $text-color;
       margin: 10px;
+      font-weight: lighter;
+      font-size: 1.3rem;
 
       &:hover {
-        color: rgb(92, 100, 92);
+        color: rgb(126, 141, 126);
       }
       &:focus {
         outline: none !important;
@@ -120,9 +124,35 @@ body {
 
 p {
   margin: 5px;
+  font-size: 1.2rem;
 }
 button {
   color: $text-color;
+}
+
+/*Modal*/
+.modal-body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  .modal-img {
+    width: 50%;
+  }
+  .varukorg-container {
+    width: 50%;
+    text-align: center;
+  }
+}
+.modal-footer {
+  .btn.btn-primary {
+    background-color: rgb(126, 141, 126);
+    border-color: white;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 /*Rasmus kod börjar här*/
@@ -132,8 +162,7 @@ button {
 }
 
 .elsa-bild {
-  width: 90%;
-  height: 60vh;
+  width: 100%;
   position: relative;
   margin-left: 5%;
 }
@@ -187,7 +216,18 @@ button {
     color: #ac2bac;
   }
 }
+.final-body {
+  height: 100%;
 
+  .messagecontainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(158, 177, 158);
+    border: $text-color;
+  }
+}
 @media screen and (min-width: 786px) {
   /*Hannas kod börjar här*/
   .grid-container {
@@ -264,6 +304,7 @@ button {
 
       div[class^="container"] {
         width: 20%;
+        margin: 20px;
 
         img[class^="img"] {
           width: 100%;
