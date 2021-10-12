@@ -37,6 +37,24 @@ body {
   background-size: cover;
   background-position: center;
 }
+.hero p {
+  font-size: 2.3rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.815);
+  align-items: center;
+  width: 60%;
+}
+.hero .button {
+  color: rgba(41, 38, 38, 0.815);
+  border-style: none;
+  height: 55px;
+  width: 110px;
+  background-color: rgba(255, 255, 255, 0.637);
+}
+.hero .button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  font-size: 18px;
+}
 .hero .hero-text {
   width: 80%;
   padding: 20px;
@@ -67,6 +85,7 @@ body {
 /*Fannys kod börjar här*/
 .products {
   text-align: center;
+  color: #3d3d3d;
 }
 
 .productwrapper {
@@ -89,6 +108,9 @@ body {
 }
 .productwrapper p {
   margin: 5px;
+}
+.productwrapper button {
+  color: #3d3d3d;
 }
 .productwrapper .img-1,
 .productwrapper .img-2,
@@ -187,6 +209,7 @@ body {
   font-size: 1.2em;
 }
 
+<<<<<<< HEAD
 /*Checkout/varukorg kod börjar här*/
 /*Hannas kod börjar här*/
 .varukorg-container {
@@ -216,4 +239,13 @@ body {
   grid-area: craftinfo;
   height: 40vh;
   width: 20vh;
+=======
+/*tacksida*/
+.messagecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+>>>>>>> 6b6d140dddc1d4267c598067ffb8f4c77f1dd608
 }

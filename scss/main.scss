@@ -5,12 +5,12 @@ $text-color: #3d3d3d;
 $hero-color: #000000;
 
 body {
-    font: $font-stack;
-    color: $text-color;
-    background-color: $background-color;
-    height: 100%;
-    font-size: 12px;
-    font-weight: lighter;
+  font: $font-stack;
+  color: $text-color;
+  background-color: $background-color;
+  height: 100%;
+  font-size: 12px;
+  font-weight: lighter;
 }
 
 .grid-container {
@@ -43,16 +43,36 @@ body {
   background-size: cover;
   background-position: center;
 
+  p {
+    font-size: 2.3rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.815);
+    align-items: center;
+    width: 60%;
+  }
 
-.hero-text{
+  .button {
+    color: rgba(41, 38, 38, 0.815);
+    border-style: none;
+    height: 55px;
+    width: 110px;
+    background-color: rgba(255, 255, 255, 0.637);
+    &:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      font-size: 18px;
+    }
+  }
+
+  .hero-text {
     width: 80%;
     padding: 20px;
     margin-bottom: 26px;
     border-radius: 1%;
     font-size: 1.5rem;
     color: $hero-color;
-    background-color:#ecececd3;
- }
+    background-color: #ecececd3;
+  }
 }
 
 .button {
@@ -73,6 +93,7 @@ body {
 /*Fannys kod börjar här*/
 .products {
   text-align: center;
+  color: $text-color;
 }
 .productwrapper {
   display: flex;
@@ -94,6 +115,9 @@ body {
   }
   p {
     margin: 5px;
+  }
+  button {
+    color: $text-color;
   }
 
   .img-1,
@@ -170,8 +194,7 @@ body {
   .bi-shop,
   .bi-telephone,
   .bi-envelope,
-  .bi-arrow-down-circle
-   {
+  .bi-arrow-down-circle {
     color: black;
   }
 
@@ -234,4 +257,12 @@ grid-template-areas:
   grid-area: craftinfo;
   height: 40vh;
   width: 20vh;
+}
+/*tacksida*/
+.messagecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
