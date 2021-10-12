@@ -1,45 +1,5 @@
 @charset "UTF-8";
 /*Hannas kod börjar här*/
-.varukorg-container {
-  display: grid;
-  grid-template-columns: 100px 1fr 100px;
-  grid-auto-rows: 25vh 30vh 25vh;
-  grid-gap: 0.5em;
-  justify-items: center;
-  grid-template-areas: "shophead shophead shophead" "sidebar sidebar craftinfo" "sidebar sidebar craftinfo";
-}
-
-.shophead {
-  grid-area: shophead;
-}
-
-.shop-img {
-  grid-area: sidebar;
-  background-image: url("../Bilder/Ev-hero4.jpeg");
-  width: 25vh;
-  height: 40vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.craft-info {
-  grid-area: craftinfo;
-  height: 40vh;
-  width: 20vh;
-}
-
-/*tacksida*/
-.messagecontainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: yellowgreen;
-  font-size: 1, 2rem;
-}
-
 body {
   font: Arial, Helvetica, sans-serif;
   color: #3d3d3d;
@@ -126,6 +86,9 @@ body {
   text-align: center;
   color: #3d3d3d;
 }
+.products h2 {
+  font-weight: lighter;
+}
 
 .productwrapper {
   display: flex;
@@ -152,6 +115,8 @@ body {
   text-decoration: none;
   color: #3d3d3d;
   margin: 10px;
+  font-weight: lighter;
+  font-size: 1.3rem;
 }
 .productwrapper div[class^=container] button[id^=productname]:hover {
   color: #7e8d7e;
@@ -163,10 +128,34 @@ body {
 
 p {
   margin: 5px;
+  font-size: 1.2rem;
 }
 
 button {
   color: #3d3d3d;
+}
+
+/*Modal*/
+.modal-body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.modal-body .modal-img {
+  width: 50%;
+}
+.modal-body .varukorg-container {
+  width: 50%;
+  text-align: center;
+}
+
+.modal-footer .btn.btn-primary {
+  background-color: #7e8d7e;
+  border-color: white;
+}
+.modal-footer a {
+  color: white;
+  text-decoration: none;
 }
 
 /*Rasmus kod börjar här*/
@@ -176,8 +165,7 @@ button {
 }
 
 .elsa-bild {
-  width: 90%;
-  height: 60vh;
+  width: 100%;
   position: relative;
   margin-left: 5%;
 }
@@ -225,6 +213,18 @@ button {
 }
 .kontakt .bi-instagram {
   color: #ac2bac;
+}
+
+.final-body {
+  height: 100%;
+}
+.final-body .messagecontainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: #9eb19e;
+  border: #3d3d3d;
 }
 
 @media screen and (min-width: 786px) {
