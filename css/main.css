@@ -241,19 +241,6 @@ button {
     flex-direction: column;
   }
 
-  /*Fannys kod börjar här*/
-  .productwrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  /*Rasmus kod börjar här*/
-  .kontakt {
-    height: 40vh;
-  }
-}
-@media screen and (min-width: 786px) and (min-width: 786px) {
   .productwrapper {
     width: 100%;
   }
@@ -281,10 +268,7 @@ button {
     height: 25vh;
   }
 }
-@media screen and (min-width: 786px) and (min-width: 786px) and (min-width: 1200) {
-  /*Hannas kod börjar här*/
-  /*Fannyss kod börjar här*/
-  /*Rasmus kod börjar här*/
+@media screen and (min-width: 786px) and (min-width: 1200) {
   .kontakt {
     height: 30vh;
   }
@@ -299,17 +283,5 @@ button {
     width: 100%;
     line-height: 2em;
     line-height: 1.8rem;
-  }
-}
-@media screen and (min-width: 1200) {
-  .kontakt {
-    height: 30vh;
-  }
-
-  .elsa-bild {
-    width: 90%;
-    height: 60vh;
-    position: relative;
-    margin-left: -5%;
   }
 }
