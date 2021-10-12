@@ -126,20 +126,10 @@ button {
 }
 
 /*Rasmus kod börjar här*/
-.bi-arrow-down-circle {
-  font-weight: lighter;
-  position: relative;
-  margin-top: 40px;
-  border-radius: 50%;
-  font-size: 1.5em;
-}
-
 .anchor {
   text-decoration: none;
   color: black;
 }
-
-/*Rasmus kod börjar här*/
 
 .elsa-bild {
   width: 90%;
@@ -226,15 +216,4 @@ button {
 }
 
 @media screen and (min-width: 1200) {
-  .kontakt {
-    height: 30vh;
-    background-color: salmon;
-  }
-
-  .elsa-bild {
-    width: 90%;
-    height: 60vh;
-    position: relative;
-    margin-left: -5%;
-  }
 }
