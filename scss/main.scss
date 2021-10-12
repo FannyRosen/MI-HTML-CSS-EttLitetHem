@@ -102,73 +102,27 @@ body {
 }
 .productwrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
 
-  .container-1,
-  .container-2,
-  .container-3,
-  .container-4,
-  .container-5,
-  .container-6,
-  .container-7,
-  .container-8 {
+  div[class^="container"] {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 15px;
-  }
-  p {
-    margin: 5px;
-  }
-  button {
-    color: $text-color;
-  }
+    width: 90%;
 
-  .img-1,
-  .img-2,
-  .img-3,
-  .img-4,
-  .img-5,
-  .img-6,
-  .img-7,
-  .img-8 {
-    width: 30vh;
-    height: 30vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 15px;
-  }
-  .img-1 {
-    background-image: url(../Bilder/kopp-blue.jpeg);
-  }
-  .img-2 {
-    background-image: url(../Bilder/kopp-lightgrey.jpeg);
-  }
-  .img-3 {
-    background-image: url(../Bilder/kopp-grey.jpeg);
-  }
-  .img-4 {
-    background-image: url(../Bilder/kopp-turkos.jpeg);
-  }
-  .img-5 {
-    background-image: url(../Bilder/vas-smal-vit.jpeg);
-  }
-  .img-6 {
-    background-image: url(../Bilder/vas-rounddarkgreen.jpeg);
-  }
-  .img-7 {
-    background-image: url(../Bilder/vas-largegrey.jpeg);
-  }
-  .img-8 {
-    background-image: url(../Bilder/vas-largewhite.jpeg);
+    img[class^="img"] {
+      width: 85%;
+    }
   }
 }
 
-.anchor {
-  text-decoration: none;
-  color: black;
+p {
+  margin: 5px;
+}
+button {
+  color: $text-color;
 }
 
 /*Rasmus kod börjar här*/
@@ -179,6 +133,13 @@ body {
   border-radius: 50%;
   font-size: 1.5em;
 }
+
+.anchor {
+  text-decoration: none;
+  color: black;
+}
+
+/*Rasmus kod börjar här*/
 
 .elsa-bild {
   width: 90%;
@@ -191,9 +152,9 @@ body {
   border: 1px solid black;
   .om-p {
     color: black;
-    font-size: 1em;
+    font-size: 0.9rem;
     width: 100%;
-    line-height: 2em;
+    line-height: 1.6rem;
     position: relative;
     margin-left: 2%;
   }
@@ -204,6 +165,7 @@ body {
     margin-left: 2%;
   }
 }
+
 .kontakt {
   border: 1px solid black;
   height: 75vh;
@@ -214,61 +176,83 @@ body {
   .bi-envelope,
   .bi-arrow-down-circle {
     color: black;
-    font-size: 2.4em;
+    font-size: 1.6rem;
   }
-
-  .bi-twitter,
-  .bi-facebook,
-  .bi-instagram {
-    font-size: 2.4em;
-    border-radius: 50%;
-  }
-
-  .bi-twitter {
-    color: #55acee;
-  }
-
-  .bi-facebook {
-    color: #3b5998;
-  }
-
-  .bi-instagram {
-    color: #ac2bac;
-  }
-}
-
-.Kont-P {
-  color: black;
-  font-size: 1.2em;
-}
-
-@media screen and (min-width: 786px) {
   .kontakt {
-    height: 40vh;
-  }
+    border: 1px solid black;
 
-  .elsa-bild {
-    width: 110%;
-    height: 60vh;
-  }
-  .om {
-    .om-p {
+    .bi-geo-alt,
+    .bi-shop,
+    .bi-telephone,
+    .bi-envelope,
+    .bi-arrow-down-circle {
       color: black;
-      width: 100%;
-      line-height: 2em;
+    }
+    .bi-twitter,
+    .bi-facebook,
+    .bi-instagram {
+      font-size: 2rem;
+      border-radius: 50%;
+    }
+
+    .bi-twitter,
+    .bi-facebook,
+    .bi-instagram {
+      font-size: 2em;
+      border-radius: 50%;
+    }
+
+    .bi-twitter {
+      color: #55acee;
+    }
+
+    .bi-facebook {
+      color: #3b5998;
+    }
+
+    .bi-instagram {
+      color: #ac2bac;
     }
   }
-}
 
-@media screen and (min-width: 992px) {
-  .kontakt {
-    height: 30vh;
+  .Kont-P {
+    color: black;
+    font-size: 1.2em;
   }
 
-  .elsa-bild {
-    width: 90%;
-    height: 60vh;
-    position: relative;
-    margin-left: -5%;
+  @media screen and (min-width: 786px) {
+    .productwrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .kontakt {
+      height: 40vh;
+    }
+
+    .elsa-bild {
+      width: 100%;
+      height: 60vh;
+    }
+    .om {
+      .om-p {
+        color: black;
+        width: 100%;
+        line-height: 2em;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200) {
+    .kontakt {
+      height: 30vh;
+    }
+
+    .elsa-bild {
+      width: 90%;
+      height: 60vh;
+      position: relative;
+      margin-left: -5%;
+    }
   }
 }

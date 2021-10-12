@@ -130,71 +130,26 @@ body {
 
 .productwrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
 }
-.productwrapper .container-1,
-.productwrapper .container-2,
-.productwrapper .container-3,
-.productwrapper .container-4,
-.productwrapper .container-5,
-.productwrapper .container-6,
-.productwrapper .container-7,
-.productwrapper .container-8 {
+.productwrapper div[class^=container] {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 15px;
+  width: 90%;
 }
-.productwrapper p {
-  margin: 5px;
-}
-.productwrapper button {
-  color: #3d3d3d;
-}
-.productwrapper .img-1,
-.productwrapper .img-2,
-.productwrapper .img-3,
-.productwrapper .img-4,
-.productwrapper .img-5,
-.productwrapper .img-6,
-.productwrapper .img-7,
-.productwrapper .img-8 {
-  width: 30vh;
-  height: 30vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 15px;
-}
-.productwrapper .img-1 {
-  background-image: url(../Bilder/kopp-blue.jpeg);
-}
-.productwrapper .img-2 {
-  background-image: url(../Bilder/kopp-lightgrey.jpeg);
-}
-.productwrapper .img-3 {
-  background-image: url(../Bilder/kopp-grey.jpeg);
-}
-.productwrapper .img-4 {
-  background-image: url(../Bilder/kopp-turkos.jpeg);
-}
-.productwrapper .img-5 {
-  background-image: url(../Bilder/vas-smal-vit.jpeg);
-}
-.productwrapper .img-6 {
-  background-image: url(../Bilder/vas-rounddarkgreen.jpeg);
-}
-.productwrapper .img-7 {
-  background-image: url(../Bilder/vas-largegrey.jpeg);
-}
-.productwrapper .img-8 {
-  background-image: url(../Bilder/vas-largewhite.jpeg);
+.productwrapper div[class^=container] img[class^=img] {
+  width: 85%;
 }
 
-.anchor {
-  text-decoration: none;
-  color: black;
+p {
+  margin: 5px;
+}
+
+button {
+  color: #3d3d3d;
 }
 
 /*Rasmus kod börjar här*/
@@ -206,6 +161,12 @@ body {
   font-size: 1.5em;
 }
 
+.anchor {
+  text-decoration: none;
+  color: black;
+}
+
+/*Rasmus kod börjar här*/
 .elsa-bild {
   width: 90%;
   height: 58vh;
@@ -218,9 +179,9 @@ body {
 }
 .om .om-p {
   color: black;
-  font-size: 1em;
+  font-size: 0.9rem;
   width: 100%;
-  line-height: 2em;
+  line-height: 1.6rem;
   position: relative;
   margin-left: 2%;
 }
@@ -240,51 +201,67 @@ body {
 .kontakt .bi-envelope,
 .kontakt .bi-arrow-down-circle {
   color: black;
-  font-size: 2.4em;
+  font-size: 1.6rem;
 }
-.kontakt .bi-twitter,
-.kontakt .bi-facebook,
-.kontakt .bi-instagram {
-  font-size: 2.4em;
+.kontakt .kontakt {
+  border: 1px solid black;
+}
+.kontakt .kontakt .bi-geo-alt,
+.kontakt .kontakt .bi-shop,
+.kontakt .kontakt .bi-telephone,
+.kontakt .kontakt .bi-envelope,
+.kontakt .kontakt .bi-arrow-down-circle {
+  color: black;
+}
+.kontakt .kontakt .bi-twitter,
+.kontakt .kontakt .bi-facebook,
+.kontakt .kontakt .bi-instagram {
+  font-size: 2rem;
   border-radius: 50%;
 }
-.kontakt .bi-twitter {
+.kontakt .kontakt .bi-twitter,
+.kontakt .kontakt .bi-facebook,
+.kontakt .kontakt .bi-instagram {
+  font-size: 2em;
+  border-radius: 50%;
+}
+.kontakt .kontakt .bi-twitter {
   color: #55acee;
 }
-.kontakt .bi-facebook {
+.kontakt .kontakt .bi-facebook {
   color: #3b5998;
 }
-.kontakt .bi-instagram {
+.kontakt .kontakt .bi-instagram {
   color: #ac2bac;
 }
-
-.Kont-P {
+.kontakt .Kont-P {
   color: black;
   font-size: 1.2em;
 }
-
 @media screen and (min-width: 786px) {
-  .kontakt {
+  .kontakt .productwrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .kontakt .kontakt {
     height: 40vh;
   }
-
-  .elsa-bild {
-    width: 110%;
+  .kontakt .elsa-bild {
+    width: 100%;
     height: 60vh;
   }
-
-  .om .om-p {
+  .kontakt .om .om-p {
     color: black;
     width: 100%;
     line-height: 2em;
   }
 }
-@media screen and (min-width: 992px) {
-  .kontakt {
+@media screen and (min-width: 1200) {
+  .kontakt .kontakt {
     height: 30vh;
   }
-
-  .elsa-bild {
+  .kontakt .elsa-bild {
     width: 90%;
     height: 60vh;
     position: relative;
