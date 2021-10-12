@@ -100,22 +100,21 @@ body {
 }
 .productwrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
 
-  .container-1,
-  .container-2,
-  .container-3,
-  .container-4,
-  .container-5,
-  .container-6,
-  .container-7,
-  .container-8 {
+  div[class^="container"] {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 15px;
+    width: 90%;
+
+    img[class^="img"] {
+      width: 85%;
+    }
   }
+
   p {
     margin: 5px;
   }
@@ -123,114 +122,76 @@ body {
     color: $text-color;
   }
 
-  .img-1,
-  .img-2,
-  .img-3,
-  .img-4,
-  .img-5,
-  .img-6,
-  .img-7,
-  .img-8 {
-    width: 30vh;
-    height: 30vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 15px;
-  }
-  .img-1 {
-    background-image: url(../Bilder/kopp-blue.jpeg);
-  }
-  .img-2 {
-    background-image: url(../Bilder/kopp-lightgrey.jpeg);
-  }
-  .img-3 {
-    background-image: url(../Bilder/kopp-grey.jpeg);
-  }
-  .img-4 {
-    background-image: url(../Bilder/kopp-turkos.jpeg);
-  }
-  .img-5 {
-    background-image: url(../Bilder/vas-smal-vit.jpeg);
-  }
-  .img-6 {
-    background-image: url(../Bilder/vas-rounddarkgreen.jpeg);
-  }
-  .img-7 {
-    background-image: url(../Bilder/vas-largegrey.jpeg);
-  }
-  .img-8 {
-    background-image: url(../Bilder/vas-largewhite.jpeg);
-  }
-}
-
-/*Rasmus kod börjar här*/
-.bi-arrow-down-circle {
-  font-weight: lighter;
-  position: relative;
-  margin-top: 40px;
-  border-radius: 50%;
-  font-size: 1.5em;
-}
-
-.elsa-bild {
-  width: 100%;
-}
-
-.om {
-  border: 1px solid black;
-  .om-p {
-    color: black;
-    font-size: 1em;
-    width: 100%;
-    line-height: 2em;
-  }
-
-  .om-h2 {
-    color: black;
-  }
-}
-.kontakt {
-  border: 1px solid black;
-
-  .bi-geo-alt,
-  .bi-shop,
-  .bi-telephone,
-  .bi-envelope,
+  /*Rasmus kod börjar här*/
   .bi-arrow-down-circle {
-    color: black;
-  }
-
-  .bi-twitter,
-  .bi-facebook,
-  .bi-instagram {
-    font-size: 2em;
+    font-weight: lighter;
+    position: relative;
+    margin-top: 40px;
     border-radius: 50%;
+    font-size: 1.5em;
   }
 
-  .bi-twitter {
-    color: #55acee;
+  .elsa-bild {
+    width: 100%;
   }
 
-  .bi-facebook {
-    color: #3b5998;
+  .om {
+    border: 1px solid black;
+    .om-p {
+      color: black;
+      font-size: 1em;
+      width: 100%;
+      line-height: 2em;
+    }
+
+    .om-h2 {
+      color: black;
+    }
+  }
+  .kontakt {
+    border: 1px solid black;
+
+    .bi-geo-alt,
+    .bi-shop,
+    .bi-telephone,
+    .bi-envelope,
+    .bi-arrow-down-circle {
+      color: black;
+    }
+
+    .bi-twitter,
+    .bi-facebook,
+    .bi-instagram {
+      font-size: 2em;
+      border-radius: 50%;
+    }
+
+    .bi-twitter {
+      color: #55acee;
+    }
+
+    .bi-facebook {
+      color: #3b5998;
+    }
+
+    .bi-instagram {
+      color: #ac2bac;
+    }
   }
 
-  .bi-instagram {
-    color: #ac2bac;
+  .Kont-P {
+    color: black;
+    font-size: 1.2em;
   }
-}
 
-.Kont-P {
-  color: black;
-  font-size: 1.2em;
-}
-
-/*tacksida*/
-.messagecontainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  /*tacksida*/
+  .messagecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(196, 177, 190);
+    font-size: 1.2em;
+  }
 }
