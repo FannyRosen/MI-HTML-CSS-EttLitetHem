@@ -76,19 +76,22 @@ body {
 }
 
 .button {
-    color: $text-color;
-    background-color: #ececece8;
-    font-weight: lighter;
-    border-style: none;
-    border-radius: 1%;
-    font-size: 1rem;
-    height: 50px;
-    width: 90px;
-    margin: 20px 20px 30px 20px;
-    color: $hero-color;
-    &:hover { box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-        font-size: 17px;}
-   }
+  color: $text-color;
+  background-color: #ececece8;
+  font-weight: lighter;
+  border-style: none;
+  border-radius: 1%;
+  font-size: 1rem;
+  height: 50px;
+  width: 90px;
+  margin: 20px 20px 30px 20px;
+  color: $hero-color;
+  &:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    font-size: 17px;
+  }
+}
 
 /*Fannys kod börjar här*/
 .products {
@@ -201,7 +204,7 @@ body {
 }
 .kontakt {
   border: 1px solid black;
-  height: 72vh;
+  height: 75vh;
 
   .bi-geo-alt,
   .bi-shop,
@@ -209,13 +212,13 @@ body {
   .bi-envelope,
   .bi-arrow-down-circle {
     color: black;
-    font-size: 2em;
+    font-size: 2.4em;
   }
 
   .bi-twitter,
   .bi-facebook,
   .bi-instagram {
-    font-size: 2em;
+    font-size: 2.4em;
     border-radius: 50%;
   }
 
@@ -237,20 +240,19 @@ body {
   font-size: 1.2em;
 }
 
-
 /*Checkout/varukorg kod börjar här*/
 /*Hannas kod börjar här*/
 
-.varukorg-container{
-display: grid;
-grid-template-columns: 100px 1fr 100px;
-grid-auto-rows: 25vh 30vh 25vh;
-grid-gap: 0.5em;
-justify-items: center;
-grid-template-areas:
-"shophead shophead shophead"
-"sidebar sidebar craftinfo"
-"sidebar sidebar craftinfo";
+.varukorg-container {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  grid-auto-rows: 25vh 30vh 25vh;
+  grid-gap: 0.5em;
+  justify-items: center;
+  grid-template-areas:
+    "shophead shophead shophead"
+    "sidebar sidebar craftinfo"
+    "sidebar sidebar craftinfo";
 }
 
 .shophead {
@@ -283,7 +285,7 @@ grid-template-areas:
 
 @media screen and (min-width: 786px) {
   .kontakt {
-    height: 30vh;
+    height: 40vh;
   }
 
   .elsa-bild {
@@ -293,7 +295,6 @@ grid-template-areas:
   .om {
     .om-p {
       color: black;
-      font-size: 1em;
       width: 100%;
       line-height: 2em;
     }
