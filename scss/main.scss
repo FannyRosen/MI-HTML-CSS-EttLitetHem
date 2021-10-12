@@ -143,7 +143,7 @@ button {
 
 .elsa-bild {
   width: 90%;
-  height: 58vh;
+  height: 60vh;
   position: relative;
   margin-left: 5%;
 }
@@ -153,10 +153,10 @@ button {
   .om-p {
     color: black;
     font-size: 0.9rem;
-    width: 100%;
+    width: 98%;
     line-height: 1.6rem;
     position: relative;
-    margin-left: 2%;
+    margin-left: 1.5%;
   }
 
   .om-h2 {
@@ -168,7 +168,7 @@ button {
 
 .kontakt {
   border: 1px solid black;
-  height: 75vh;
+  height: 70vh;
 
   .bi-geo-alt,
   .bi-shop,
@@ -176,83 +176,65 @@ button {
   .bi-envelope,
   .bi-arrow-down-circle {
     color: black;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+  }
+  .bi-twitter,
+  .bi-facebook,
+  .bi-instagram {
+    font-size: 2rem;
+    border-radius: 50%;
+  }
+
+  .bi-twitter {
+    color: #55acee;
+  }
+
+  .bi-facebook {
+    color: #3b5998;
+  }
+
+  .bi-instagram {
+    color: #ac2bac;
+  }
+}
+
+.kont-P {
+  color: black;
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 786px) {
+  .productwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .kontakt {
-    border: 1px solid black;
+    height: 25vh;
+  }
 
-    .bi-geo-alt,
-    .bi-shop,
-    .bi-telephone,
-    .bi-envelope,
-    .bi-arrow-down-circle {
+  .elsa-bild {
+    width: 75%;
+    height: 60vh;
+  }
+  .om {
+    .om-p {
       color: black;
-    }
-    .bi-twitter,
-    .bi-facebook,
-    .bi-instagram {
-      font-size: 2rem;
-      border-radius: 50%;
-    }
-
-    .bi-twitter,
-    .bi-facebook,
-    .bi-instagram {
-      font-size: 2em;
-      border-radius: 50%;
-    }
-
-    .bi-twitter {
-      color: #55acee;
-    }
-
-    .bi-facebook {
-      color: #3b5998;
-    }
-
-    .bi-instagram {
-      color: #ac2bac;
+      line-height: 1.8rem;
     }
   }
+}
 
-  .Kont-P {
-    color: black;
-    font-size: 1.2em;
+@media screen and (min-width: 1200) {
+  .kontakt {
+    height: 30vh;
+    background-color: salmon;
   }
 
-  @media screen and (min-width: 786px) {
-    .productwrapper {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
-    .kontakt {
-      height: 40vh;
-    }
-
-    .elsa-bild {
-      width: 100%;
-      height: 60vh;
-    }
-    .om {
-      .om-p {
-        color: black;
-        width: 100%;
-        line-height: 2em;
-      }
-    }
-  }
-
-  @media screen and (min-width: 1200) {
-    .kontakt {
-      height: 30vh;
-    }
-
-    .elsa-bild {
-      width: 90%;
-      height: 60vh;
-      position: relative;
-      margin-left: -5%;
-    }
+  .elsa-bild {
+    width: 90%;
+    height: 60vh;
+    position: relative;
+    margin-left: -5%;
   }
 }
