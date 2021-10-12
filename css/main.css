@@ -52,15 +52,15 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 100px 1fr 100px 1fr;
-  grid-template-rows: 25vh 50vh 25vh;
-  grid-gap: 1em;
-  grid-template-areas: "header header header header" "content content content content";
+  grid-template-rows: 26vh 55vh 20vh;
+  gap: 1em;
+  grid-template-areas: "header header header header" "content content content content" ". . . .";
 }
 
 .header {
   grid-area: header;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
   justify-content: space-around;
 }
@@ -70,9 +70,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  align-items: flex-end;
-  text-align: center;
   align-items: center;
+  text-align: center;
   background-image: url("../Bilder/Ev-hero6.jpeg");
   background-size: cover;
   background-position: center;
@@ -229,6 +228,32 @@ button {
 }
 
 @media screen and (min-width: 786px) {
+  /*Hannas kod börjar här*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px 1fr;
+    grid-template-rows: 30vh 70vh 25vh;
+    gap: 1em;
+    grid-template-areas: "header header header header" "content content content content" ". . . .";
+  }
+
+  .container-fluid {
+    flex-direction: column;
+  }
+
+  /*Fannys kod börjar här*/
+  .productwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /*Rasmus kod börjar här*/
+  .kontakt {
+    height: 40vh;
+  }
+}
+@media screen and (min-width: 786px) and (min-width: 786px) {
   .productwrapper {
     width: 100%;
   }
@@ -254,6 +279,14 @@ button {
 
   .kontakt {
     height: 25vh;
+  }
+}
+@media screen and (min-width: 786px) and (min-width: 786px) and (min-width: 1200) {
+  /*Hannas kod börjar här*/
+  /*Fannyss kod börjar här*/
+  /*Rasmus kod börjar här*/
+  .kontakt {
+    height: 30vh;
   }
 
   .elsa-bild {
