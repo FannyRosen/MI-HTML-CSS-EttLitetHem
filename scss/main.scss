@@ -146,24 +146,14 @@ button {
 }
 
 /*Rasmus kod börjar här*/
-.bi-arrow-down-circle {
-  font-weight: lighter;
-  position: relative;
-  margin-top: 40px;
-  border-radius: 50%;
-  font-size: 1.5em;
-}
-
 .anchor {
   text-decoration: none;
   color: black;
 }
 
-/*Rasmus kod börjar här*/
-
 .elsa-bild {
   width: 90%;
-  height: 58vh;
+  height: 60vh;
   position: relative;
   margin-left: 5%;
 }
@@ -172,11 +162,11 @@ button {
   border: 1px solid black;
   .om-p {
     color: black;
-    font-size: 1em;
-    width: 100%;
-    line-height: 2em;
+    font-size: 0.9rem;
+    width: 98%;
+    line-height: 1.6rem;
     position: relative;
-    margin-left: 2%;
+    margin-left: 1.5%;
   }
 
   .om-h2 {
@@ -188,7 +178,7 @@ button {
 
 .kontakt {
   border: 1px solid black;
-  height: 75vh;
+  height: 70vh;
 
   .bi-geo-alt,
   .bi-shop,
@@ -196,48 +186,25 @@ button {
   .bi-envelope,
   .bi-arrow-down-circle {
     color: black;
-    font-size: 2.4em;
+    font-size: 1.2rem;
   }
-  .kontakt {
-    border: 1px solid black;
-
-    .bi-geo-alt,
-    .bi-shop,
-    .bi-telephone,
-    .bi-envelope,
-    .bi-arrow-down-circle {
-      color: black;
-    }
-    .bi-twitter,
-    .bi-facebook,
-    .bi-instagram {
-      font-size: 2.4em;
-      border-radius: 50%;
-    }
-
-    .bi-twitter,
-    .bi-facebook,
-    .bi-instagram {
-      font-size: 2em;
-      border-radius: 50%;
-    }
-
-    .bi-twitter {
-      color: #55acee;
-    }
-
-    .bi-facebook {
-      color: #3b5998;
-    }
-
-    .bi-instagram {
-      color: #ac2bac;
-    }
+  .bi-twitter,
+  .bi-facebook,
+  .bi-instagram {
+    font-size: 2rem;
+    border-radius: 50%;
   }
 
-  .Kont-P {
-    color: black;
-    font-size: 1.2em;
+  .bi-twitter {
+    color: #55acee;
+  }
+
+  .bi-facebook {
+    color: #3b5998;
+  }
+
+  .bi-instagram {
+    color: #ac2bac;
   }
 }
 
@@ -260,12 +227,16 @@ button {
     }
   }
 
+  .kont-P {
+    color: black;
+    font-size: 1.2em;
+  }
   .kontakt {
-    height: 40vh;
+    height: 25vh;
   }
 
   .elsa-bild {
-    width: 100%;
+    width: 75%;
     height: 60vh;
   }
   .om {
@@ -273,6 +244,7 @@ button {
       color: black;
       width: 100%;
       line-height: 2em;
+      line-height: 1.8rem;
     }
   }
 }

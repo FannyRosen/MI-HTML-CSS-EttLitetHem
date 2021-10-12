@@ -28,23 +28,29 @@
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                      <div class="collapse navbar-collapse navbar-light" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item dropdown">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Hem</a>
+                              </li>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Produkter
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Hem</a>
+                        <a class="nav-link" href="#om">Om</a>
                       </li>
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Produkter
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Koppar</a></li>
-                        <li><a class="dropdown-item" href="#">Vaser</a></li>
-                      </ul>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Om</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Kontakt</a>
+                        <a class="nav-link" href="#kontakt">Kontakt</a>
                       </li>
                       <li class="nav-item dropdown">
                       </li>
@@ -152,14 +158,14 @@
 
     <!-- Rasmus kod börjar här -->      
       <!-- s -->
-      <div class="om">
+      <div class="om" id="om">
       <div class="row justify-content-center">
         <div class="col-lg-4 col-m-4 col-sm-6 m-3">
           <div class="thumbnail">
             <img src="Bilder/Elsa.jpeg" alt="Elsa" class="elsa-bild">
           </div>
         </div>
-        <div class="col-lg-6 col-m-4 col-sm-6">
+        <div class="col-lg-6 col-m-4 col-sm-6 m-3">
           <h2 class="om-h2">Om Elsa</h2>
           <p class="om-p">För 20 år sedan under min bilsemester runt Österlen så ramlade jag av en
             ren slump in på en keramikkurs. Sedan den dagen har jag utvecklat mina
@@ -180,7 +186,7 @@
             </div>
           </div>
 
-    <footer class="kontakt">
+    <footer class="kontakt" id="kontakt">
       <p id="kon"></p>
  
     <div class="row justify-content-center">
@@ -189,43 +195,43 @@
         <i class="bi bi-geo-alt d-flex justify-content-center"></i>
       </div>
       <div class="icon d-flex align-items-center justify-content-center">
-        <p class="Kont-P"><span>Plats:</span>146 65, Stockholm</p>
+        <p class="kont-P"><span>Plats:</span>146 65, Stockholm</p>
       </div>
       </div>
       <div class="col-lg-3 col-m-4 col-sm-6 p-2">
         <div><i class="bi bi-shop d-flex justify-content-center"></i></div>
         <div class="icon d-flex align-items-center justify-content-center">
-          <p class="Kont-P"><span>Företag:</span> ett litet hem</p>
+          <p class="kont-P"><span>Företag:</span> ett litet hem</p>
         </div>
       </div>
       <div class="col-lg-3 col-m-4 col-sm-6 p-2">
         <div><i class="bi bi-telephone d-flex justify-content-center"></i></div>
         <div class="icon d-flex align-items-center justify-content-center">
-          <p class="Kont-P"><span>Telefon:</span> +46 123 456 67</p>
+          <p class="kont-P"><span>Telefon:</span> +46 123 456 67</p>
         </div>
       </div>
       <div class="col-lg-3 col-m-4 col-sm-6 p-2">
         <div><i class="bi bi-envelope d-flex justify-content-center"></i></div>
         <div class="icon d-flex align-items-center justify-content-center">
-          <p class="Kont-P"><span>Email:</span> Elsa@pottery.se</p>
+          <p class="kont-P"><span>Email:</span> Elsa@pottery.se</p>
       </div>
       </div>
       <div class="col-lg-4 col-m-4 col-sm-4 p-2">
         <div><i class="bi bi-twitter d-flex justify-content-center"></i></div>
         <div class="icon d-flex align-items-center justify-content-center">
-          <p class="Kont-P">Twitter</p>
+          <p class="kont-P">Twitter</p>
       </div>
       </div>
       <div class="col-lg-4 col-m-4 col-sm-4 p-2">
         <div><i class="bi bi-facebook d-flex justify-content-center"></i></div>
         <div class="icon d-flex align-items-center justify-content-center">
-          <p class="Kont-P"><span>Facebook:</span></p>
+          <p class="kont-P"><span>Facebook:</span></p>
       </div>
       </div>
       <div class="col-lg-4 col-m-4 col-sm-4 p-2">
         <div><i class="bi bi-instagram d-flex justify-content-center"></i></div>
         <div class="icon d-flex align-items-center justify-content-center">
-          <p class="Kont-P"><span>instagram:</span></p>
+          <p class="kont-P"><span>instagram:</span></p>
         </div>
       </div>
   </div>
