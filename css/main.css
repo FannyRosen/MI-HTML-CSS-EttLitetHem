@@ -52,7 +52,8 @@ body {
   background-color: rgba(255, 255, 255, 0.637);
 }
 .hero .button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
   font-size: 18px;
 }
 .hero .hero-text {
@@ -72,14 +73,15 @@ body {
   border-style: none;
   border-radius: 1%;
   font-size: 1rem;
-  height: 40px;
-  width: 80px;
+  height: 50px;
+  width: 90px;
   margin: 20px 20px 30px 20px;
   color: #000000;
 }
 .button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  font-size: 16px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  font-size: 17px;
 }
 
 /*Fannys kod börjar här*/
@@ -95,14 +97,14 @@ body {
   /*Rasmus kod börjar här*/
   /*tacksida*/
 }
-.productwrapper div[class^=container] {
+.productwrapper div[class^="container"] {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 15px;
   width: 90%;
 }
-.productwrapper div[class^=container] img[class^=img] {
+.productwrapper div[class^="container"] img[class^="img"] {
   width: 85%;
 }
 .productwrapper p {
@@ -129,12 +131,17 @@ body {
   font-size: 1em;
   width: 100%;
   line-height: 2em;
+  position: relative;
+  margin-left: 2%;
 }
 .productwrapper .om .om-h2 {
   color: black;
+  position: relative;
+  margin-left: 2%;
 }
 .productwrapper .kontakt {
   border: 1px solid black;
+  height: 75vh;
 }
 .productwrapper .kontakt .bi-geo-alt,
 .productwrapper .kontakt .bi-shop,
@@ -142,6 +149,7 @@ body {
 .productwrapper .kontakt .bi-envelope,
 .productwrapper .kontakt .bi-arrow-down-circle {
   color: black;
+  font-size: 2.4em;
 }
 .productwrapper .kontakt .bi-twitter,
 .productwrapper .kontakt .bi-facebook,
