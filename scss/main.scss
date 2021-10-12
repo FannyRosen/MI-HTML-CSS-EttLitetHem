@@ -2,7 +2,8 @@
 $font-stack: Arial, Helvetica, sans-serif;
 $background-color: #ececec;
 $text-color: #3d3d3d;
-$hero-color: #000000;
+$hero-color: hsl(0, 0%, 0%);
+$header-textcolor: #b4ada4;
 
 body {
   font: $font-stack;
@@ -77,10 +78,6 @@ body {
 .products {
   text-align: center;
   color: $text-color;
-
-  h2 {
-    font-weight: lighter;
-  }
 }
 .productwrapper {
   display: flex;
@@ -108,11 +105,9 @@ body {
       text-decoration: none;
       color: $text-color;
       margin: 10px;
-      font-weight: lighter;
-      font-size: 1.3rem;
 
       &:hover {
-        color: rgb(126, 141, 126);
+        color: rgb(92, 100, 92);
       }
       &:focus {
         outline: none !important;
@@ -124,35 +119,9 @@ body {
 
 p {
   margin: 5px;
-  font-size: 1.2rem;
 }
 button {
   color: $text-color;
-}
-
-/*Modal*/
-.modal-body {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-
-  .modal-img {
-    width: 50%;
-  }
-  .varukorg-container {
-    width: 50%;
-    text-align: center;
-  }
-}
-.modal-footer {
-  .btn.btn-primary {
-    background-color: rgb(126, 141, 126);
-    border-color: white;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-  }
 }
 
 /*Rasmus kod börjar här*/
@@ -162,7 +131,8 @@ button {
 }
 
 .elsa-bild {
-  width: 100%;
+  width: 90%;
+  height: 60vh;
   position: relative;
   margin-left: 5%;
 }
@@ -216,24 +186,13 @@ button {
     color: #ac2bac;
   }
 }
-.final-body {
-  height: 100%;
 
-  .messagecontainer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    background-color: rgb(158, 177, 158);
-    border: $text-color;
-  }
-}
 @media screen and (min-width: 786px) {
   /*Hannas kod börjar här*/
   .grid-container {
     display: grid;
     grid-template-columns: 100px 1fr 100px 1fr;
-    grid-template-rows: 30vh 100vh 25vh;
+    grid-template-rows: 30vh 70vh 25vh;
     gap: 1em;
     grid-template-areas:
       "header header header header"
@@ -247,13 +206,13 @@ button {
   }
 
   .nav-link {
-    color: rgb(0, 0, 0);
+    color: $header-textcolor !important;
     font-size: 1.1rem;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
     display: inline-block;
-    padding: 15px;
+    padding: 15px 20px;
     position: relative;
   }
     a:after {    
@@ -264,7 +223,7 @@ button {
       height: 2px;
       left: 50%;
       position: absolute;
-      background: #fff;
+      background: $header-textcolor; 
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
       width: 0;
     }
@@ -272,26 +231,20 @@ button {
       width: 100%; 
       left: 0; 
     }
-  
-    .hero {
-      grid-area: content;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background-image: url("../Bilder/Ev-hero6.jpeg");
-      background-size: cover;
-      background-position: center;
+    .dropdown-item {
+      color: $header-textcolor;
+     a {
+       background-color: none;
     
-      p {
-        width: 30%;
-        border-radius: 1%;
-        font-size: 1.5rem;
-        color: $hero-color;
-        background-color: #ecececd3;
-      }
+     }
     }
+    
+    .hero p {
+      width: 30%;
+      border-radius: 1%;
+      font-size: 1.5rem;
+      color: #0f0f0f;
+      }
 
 
   .productwrapper {
@@ -304,7 +257,6 @@ button {
 
       div[class^="container"] {
         width: 20%;
-        margin: 20px;
 
         img[class^="img"] {
           width: 100%;
