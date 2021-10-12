@@ -116,22 +116,22 @@ body {
       width: 85%;
     }
   }
+}
 
-  p {
-    margin: 5px;
-  }
-  button {
-    color: $text-color;
-  }
+p {
+  margin: 5px;
+}
+button {
+  color: $text-color;
+}
 
-  /*Rasmus kod börjar här*/
-  .bi-arrow-down-circle {
-    font-weight: lighter;
-    position: relative;
-    margin-top: 40px;
-    border-radius: 50%;
-    font-size: 1.5em;
-  }
+/*Rasmus kod börjar här*/
+.bi-arrow-down-circle {
+  font-weight: lighter;
+  position: relative;
+  margin-top: 40px;
+  border-radius: 50%;
+  font-size: 1.5em;
 }
 
 .anchor {
@@ -221,6 +221,11 @@ body {
   }
 
   @media screen and (min-width: 786px) {
+    .productwrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
     .kontakt {
       height: 40vh;
     }
@@ -238,7 +243,7 @@ body {
     }
   }
 
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 1200) {
     .kontakt {
       height: 30vh;
     }
