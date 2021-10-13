@@ -35,11 +35,6 @@ body {
   color: #b4ada4 !important;
 }
 
-.navbar-toggler {
-  background-color: #ececec;
-  padding: 20px;
-}
-
 .hero {
   grid-area: content;
   display: flex;
@@ -80,6 +75,7 @@ body {
 .products {
   text-align: center;
   color: #3d3d3d;
+  font-weight: lighter;
 }
 
 .productwrapper {
@@ -98,7 +94,10 @@ body {
   flex-direction: column;
   align-items: center;
   width: 80%;
-  margin-top: 30px;
+  margin: 20px;
+}
+.productwrapper div[class^=container] p {
+  font-size: 1rem;
 }
 .productwrapper div[class^=container] img[class^=img] {
   width: 100%;
@@ -107,9 +106,11 @@ body {
   text-decoration: none;
   color: #3d3d3d;
   margin: 10px;
+  font-weight: lighter;
+  font-size: 1.2rem;
 }
 .productwrapper div[class^=container] button[id^=productname]:hover {
-  color: #5c645c;
+  color: #757e75;
 }
 .productwrapper div[class^=container] button[id^=productname]:focus {
   outline: none !important;
@@ -122,6 +123,23 @@ p {
 
 button {
   color: #3d3d3d;
+}
+
+/*Modal*/
+.modal-body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.modal-body .modal-img-container {
+  width: 50%;
+}
+.modal-body .modal-img-container .modal-img {
+  width: 100%;
+}
+.modal-body .varukorg-container {
+  width: 50%;
+  text-align: center;
 }
 
 /*Rasmus kod börjar här*/
@@ -137,11 +155,8 @@ button {
   margin-left: 5%;
 }
 
-.om {
-  border: 1px solid black;
-}
 .om .om-p {
-  color: black;
+  color: #3d3d3d;
   font-size: 0.9rem;
   width: 98%;
   line-height: 1.6rem;
@@ -149,13 +164,13 @@ button {
   margin-left: 1.5%;
 }
 .om .om-h2 {
-  color: black;
+  color: #3d3d3d;
   position: relative;
   margin-left: 2%;
 }
 
 .kontakt {
-  border: 1px solid black;
+  border: #3d3d3d;
   height: 70vh;
 }
 .kontakt .bi-geo-alt,
@@ -163,7 +178,7 @@ button {
 .kontakt .bi-telephone,
 .kontakt .bi-envelope,
 .kontakt .bi-arrow-down-circle {
-  color: black;
+  color: #3d3d3d;
   font-size: 1.2rem;
 }
 .kontakt .bi-twitter,
@@ -257,7 +272,7 @@ button {
   }
 
   .kont-P {
-    color: black;
+    color: #3d3d3d;
     font-size: 1.2em;
   }
 
@@ -276,7 +291,7 @@ button {
   }
 
   .om .om-p {
-    color: black;
+    color: #3d3d3d;
     width: 100%;
     line-height: 2em;
     line-height: 1.8rem;
