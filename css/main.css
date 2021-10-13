@@ -153,6 +153,11 @@ button {
   text-decoration: none;
 }
 
+.submit-btn {
+  background-color: #7e8d7e;
+  border-color: white;
+}
+
 /*Rasmus kod börjar här*/
 .anchor {
   text-decoration: none;
