@@ -1,9 +1,7 @@
 /*Hannas kod börjar här*/
 $font-stack: Arial, Helvetica, sans-serif;
 $background-color: #ececec;
-$text-color: #3d3d3d;
-$hero-color: hsl(0, 0%, 0%);
-$header-textcolor: #b4ada4;
+$text-color: #444444;
 
 body {
   font: $font-stack;
@@ -33,14 +31,14 @@ body {
   justify-content: space-around;
 
   .dropdown-item {
-    color: $header-textcolor;
+    color: $text-color;
     a {
       background-color: none;
     }
   }
 }
 .nav-link {
-  color: $header-textcolor !important;
+  color: $text-color !important;
 }
 
 .hero {
@@ -258,7 +256,7 @@ button {
   .grid-container {
     display: grid;
     grid-template-columns: 100px 1fr 100px 1fr;
-    grid-template-rows: 30vh 60vh 20vh 20vh;
+    grid-template-rows: 35vh 60vh 20vh 20vh;
     gap: 1em;
     grid-template-areas:
       "header header header header"
@@ -273,7 +271,7 @@ button {
   }
 
   .nav-link {
-    color: $header-textcolor !important;
+    color: $text-color !important;
     font-size: 1.1rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -290,7 +288,7 @@ button {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: $header-textcolor;
+    background: $text-color;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
@@ -299,7 +297,7 @@ button {
     left: 0;
   }
   .dropdown-item {
-    color: $header-textcolor;
+    color: $text-color;
     a {
       background-color: none;
     }
@@ -354,3 +352,5 @@ button {
     }
   }
 }
+
+/*finalpage börjar här*/

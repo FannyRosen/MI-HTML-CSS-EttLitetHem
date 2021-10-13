@@ -2,7 +2,7 @@
 /*Hannas kod börjar här*/
 body {
   font: Arial, Helvetica, sans-serif;
-  color: #3d3d3d;
+  color: #444444;
   background-color: #ececec;
   height: 100%;
   font-size: 12px;
@@ -25,14 +25,14 @@ body {
   justify-content: space-around;
 }
 .header .dropdown-item {
-  color: #b4ada4;
+  color: #444444;
 }
 .header .dropdown-item a {
   background-color: none;
 }
 
 .nav-link {
-  color: #b4ada4 !important;
+  color: #444444 !important;
 }
 
 .hero {
@@ -74,7 +74,7 @@ body {
 /*Fannys kod börjar här*/
 .products {
   text-align: center;
-  color: #3d3d3d;
+  color: #444444;
 }
 .products h2 {
   font-weight: lighter;
@@ -106,7 +106,7 @@ body {
 }
 .productwrapper div[class^=container] button[id^=productname] {
   text-decoration: none;
-  color: #3d3d3d;
+  color: #444444;
   margin: 10px;
   font-weight: lighter;
   font-size: 1.2rem;
@@ -124,7 +124,7 @@ p {
 }
 
 button {
-  color: #3d3d3d;
+  color: #444444;
 }
 
 /*Modal*/
@@ -166,7 +166,7 @@ button {
 }
 
 .om .om-p {
-  color: #3d3d3d;
+  color: #444444;
   font-size: 0.9rem;
   width: 98%;
   line-height: 1.6rem;
@@ -174,13 +174,13 @@ button {
   margin-left: 1.5%;
 }
 .om .om-h2 {
-  color: #3d3d3d;
+  color: #444444;
   position: relative;
   margin-left: 2%;
 }
 
 .kontakt {
-  border: #3d3d3d;
+  border: #444444;
   height: 70vh;
 }
 .kontakt .bi-geo-alt,
@@ -188,7 +188,7 @@ button {
 .kontakt .bi-telephone,
 .kontakt .bi-envelope,
 .kontakt .bi-arrow-down-circle {
-  color: #3d3d3d;
+  color: #444444;
   font-size: 1.2rem;
 }
 .kontakt .bi-twitter,
@@ -228,7 +228,7 @@ button {
   .grid-container {
     display: grid;
     grid-template-columns: 100px 1fr 100px 1fr;
-    grid-template-rows: 30vh 60vh 20vh 20vh;
+    grid-template-rows: 35vh 60vh 20vh 20vh;
     gap: 1em;
     grid-template-areas: "header header header header" "content content content content" "content content content content" ". . . .";
   }
@@ -239,7 +239,7 @@ button {
   }
 
   .nav-link {
-    color: #b4ada4 !important;
+    color: #444444 !important;
     font-size: 1.1rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -257,7 +257,7 @@ button {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #b4ada4;
+    background: #444444;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
@@ -268,7 +268,7 @@ button {
   }
 
   .dropdown-item {
-    color: #b4ada4;
+    color: #444444;
   }
   .dropdown-item a {
     background-color: none;
@@ -298,7 +298,7 @@ button {
   }
 
   .kont-P {
-    color: #3d3d3d;
+    color: #444444;
     font-size: 1.2em;
   }
 
@@ -316,9 +316,10 @@ button {
   }
 
   .om .om-p {
-    color: #3d3d3d;
+    color: #444444;
     width: 100%;
     line-height: 2em;
     line-height: 1.8rem;
   }
 }
+/*finalpage börjar här*/
