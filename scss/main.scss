@@ -172,6 +172,7 @@ button {
 }
 
 /*Rasmus kod börjar här*/
+
 .anchor {
   text-decoration: none;
   color: black;
@@ -193,7 +194,6 @@ button {
     position: relative;
     margin-left: 1.5%;
   }
-
   .om-h2 {
     color: $text-color;
     position: relative;
@@ -230,6 +230,27 @@ button {
 
   .bi-instagram {
     color: #ac2bac;
+  }
+
+  .bi-geo-alt {
+    color: red;
+  }
+
+  .bi-telephone {
+    color: green;
+  }
+
+  .bi-shop {
+    color: brown;
+  }
+
+  .bi-envelope {
+    color: blue;
+  }
+
+  .kont-P {
+    color: black;
+    font-size: 1rem;
   }
 }
 
