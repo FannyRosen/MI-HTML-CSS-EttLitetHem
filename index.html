@@ -24,7 +24,7 @@
       <header class="header">
               <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color:#ececec; padding: 20px;">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
+                  <a class="navbar-brand">
                     <img src="../ettlitethem/Bilder/Brown-logga-s.PNG" alt="logo" height="150" class="d-inline-block d-md-none align-text-top">
                     <img src="../ettlitethem/Bilder/Brown-logga-b.PNG" alt="logo" height="125" class="d-none d-md-inline-block align-text-top">
                   </a>
@@ -42,8 +42,8 @@
                               Produkter
                             </a>
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item" href="#">Koppar</a></li>
-                              <li><a class="dropdown-item" href="#">Vaser</a></li>
+                              <li><a class="dropdown-item" href="#kopp">Koppar</a></li>
+                              <li><a class="dropdown-item" href="#vas">Vaser</a></li>
                             </ul>
                           </li>
                           <li class="nav-item">
@@ -65,11 +65,12 @@
                          <button class="button"><a href="#produkt" class="anchor">
                           Produkter</a></button>
                         </div>
+                        <div id="produkt"></div>
                         </section>
+                        <div id="kopp"></div> 
           </div>
     <!--Fannys kod börjar här-->
-    <p id="pro"></p>
-    <header class="products" id="produkt">
+    <header class="products">
       <h2>PRODUKTER</h2>
     </header>
     <div class="productwrapper">
@@ -112,6 +113,7 @@
             </div>
             <p>215 kr</p>
         </div>
+        <div id="vas"></div>
         <div class="container-2">
           <img class="img-2" src="../ettlitethem/Bilder/kopp-lightgrey.jpeg"/>
           <button id="productname" type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -119,6 +121,7 @@
             </button>
           <p>215 kr</p>
         </div>
+        
         <div class="container-3">
           <img class="img-3" src="../ettlitethem/Bilder/kopp-grey.jpeg"/>
           <button id="productname" type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -126,12 +129,14 @@
             </button>
           <p>215 kr</p>
         </div>
+        
         <div class="container-4">
           <img class="img-4" src="../ettlitethem/Bilder/kopp-turkos.jpeg"/>
           <button id="productname" type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Kopp Turkos
             </button>
           <p>215 kr</p>
+          
         </div>
       </section>
       <section class="two">
