@@ -64,7 +64,8 @@ body {
   width: 90px;
 }
 .button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
   font-size: 17px;
 }
 .button:hover a {
@@ -89,30 +90,30 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.productwrapper div[class^=container] {
+.productwrapper div[class^="container"] {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
   margin: 20px;
 }
-.productwrapper div[class^=container] p {
+.productwrapper div[class^="container"] p {
   font-size: 1rem;
 }
-.productwrapper div[class^=container] img[class^=img] {
+.productwrapper div[class^="container"] img[class^="img"] {
   width: 100%;
 }
-.productwrapper div[class^=container] button[id^=productname] {
+.productwrapper div[class^="container"] button[id^="productname"] {
   text-decoration: none;
   color: #3d3d3d;
   margin: 10px;
   font-weight: lighter;
   font-size: 1.2rem;
 }
-.productwrapper div[class^=container] button[id^=productname]:hover {
+.productwrapper div[class^="container"] button[id^="productname"]:hover {
   color: #757e75;
 }
-.productwrapper div[class^=container] button[id^=productname]:focus {
+.productwrapper div[class^="container"] button[id^="productname"]:focus {
   outline: none !important;
   box-shadow: none !important;
 }
@@ -184,7 +185,7 @@ button {
 .kontakt .bi-twitter,
 .kontakt .bi-facebook,
 .kontakt .bi-instagram {
-  font-size: 2rem;
+  font-size: 1.6rem;
   border-radius: 50%;
 }
 .kontakt .bi-twitter {
@@ -195,6 +196,25 @@ button {
 }
 .kontakt .bi-instagram {
   color: #ac2bac;
+}
+.kontakt .bi-geo-alt {
+  color: red;
+}
+.kontakt .bi-telephone {
+  color: green;
+}
+.kontakt .bi-shop {
+  color: brown;
+}
+.kontakt .bi-envelope {
+  color: blue;
+}
+.kontakt .kont-P {
+  color: black;
+  font-size: 1rem;
+}
+.kontakt textarea {
+  width: 100%;
 }
 
 @media screen and (min-width: 786px) {
@@ -257,17 +277,17 @@ button {
     width: 100%;
   }
   .productwrapper .one,
-.productwrapper .two {
+  .productwrapper .two {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .productwrapper .one div[class^=container],
-.productwrapper .two div[class^=container] {
+  .productwrapper .one div[class^="container"],
+  .productwrapper .two div[class^="container"] {
     width: 20%;
   }
-  .productwrapper .one div[class^=container] img[class^=img],
-.productwrapper .two div[class^=container] img[class^=img] {
+  .productwrapper .one div[class^="container"] img[class^="img"],
+  .productwrapper .two div[class^="container"] img[class^="img"] {
     width: 100%;
   }
 
@@ -277,17 +297,18 @@ button {
   }
 
   .kontakt {
-    height: 25vh;
+    height: 70vh;
   }
-}
-@media screen and (min-width: 786px) and (min-width: 1200) {
-  .kontakt {
-    height: 30vh;
+  .kontakt .bi-geo-alt,
+  .kontakt .bi-shop,
+  .kontakt .bi-telephone,
+  .kontakt .bi-envelope {
+    font-size: 1.8rem;
   }
 
   .elsa-bild {
-    width: 75%;
-    height: 60vh;
+    width: 80%;
+    height: 65vh;
   }
 
   .om .om-p {
@@ -295,5 +316,16 @@ button {
     width: 100%;
     line-height: 2em;
     line-height: 1.8rem;
+  }
+}
+@media screen and (min-width: 1200) {
+  .elsa-bild {
+    width: 80%;
+    height: 60vh;
+  }
+
+  .om .om-p {
+    color: black;
+    line-height: 2rem;
   }
 }
