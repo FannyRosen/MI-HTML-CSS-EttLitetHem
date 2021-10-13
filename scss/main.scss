@@ -31,14 +31,13 @@ body {
   flex-direction: column;
   text-align: center;
   justify-content: space-around;
-  
+
   .dropdown-item {
     color: $header-textcolor;
-   a {
-     background-color: none;
-  
-   }
-}
+    a {
+      background-color: none;
+    }
+  }
 }
 .nav-link {
   color: $header-textcolor !important;
@@ -56,17 +55,15 @@ body {
   background-position: center;
   color: whitesmoke;
 
-
   p {
     width: 80%;
     border-radius: 1%;
     font-size: 1.5rem;
     margin-bottom: 15px;
-    
   }
 }
 
-  .button {
+.button {
   background-color: #fdfdfd50;
   font-size: 1rem;
   font-weight: lighter;
@@ -84,7 +81,6 @@ body {
     }
   }
 }
-
 
 /*Fannys kod börjar här*/
 .products {
@@ -169,20 +165,19 @@ button {
 
 .kontakt {
   border: 1px solid black;
-  height: 70vh;
+  height: 126vh;
 
   .bi-geo-alt,
   .bi-shop,
   .bi-telephone,
-  .bi-envelope,
-  .bi-arrow-down-circle {
+  .bi-envelope {
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .bi-twitter,
   .bi-facebook,
   .bi-instagram {
-    font-size: 2rem;
+    font-size: 1.6rem;
     border-radius: 50%;
   }
 
@@ -196,6 +191,31 @@ button {
 
   .bi-instagram {
     color: #ac2bac;
+  }
+
+  .bi-geo-alt {
+    color: red;
+  }
+
+  .bi-telephone {
+    color: green;
+  }
+
+  .bi-shop {
+    color: brown;
+  }
+
+  .bi-envelope {
+    color: blue;
+  }
+
+  .kont-P {
+    color: black;
+    font-size: 1rem;
+  }
+
+  textarea {
+    width: 100%;
   }
 }
 
@@ -228,35 +248,33 @@ button {
     padding: 15px 20px;
     position: relative;
   }
-    a:after {    
-      background: none repeat scroll 0 0 transparent;
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 2px;
-      left: 50%;
-      position: absolute;
-      background: $header-textcolor; 
-      transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      width: 0;
+  a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: $header-textcolor;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  .dropdown-item {
+    color: $header-textcolor;
+    a {
+      background-color: none;
     }
-    a:hover:after { 
-      width: 100%; 
-      left: 0; 
-    }
-    .dropdown-item {
-      color: $header-textcolor;
-     a {
-       background-color: none;
-    
-     }
-    }
-    
-    .hero p {
-      width: 45%;
-      font-size: 2rem;
-      }
+  }
 
+  .hero p {
+    width: 45%;
+    font-size: 2rem;
+  }
 
   .productwrapper {
     width: 100%;
@@ -276,30 +294,39 @@ button {
     }
   }
 
-  .kont-P {
-    color: black;
-    font-size: 1.2em;
-  }
   .kontakt {
-    height: 25vh;
+    height: 70vh;
+
+    .bi-geo-alt,
+    .bi-shop,
+    .bi-telephone,
+    .bi-envelope {
+      font-size: 1.8rem;
+    }
   }
 
-  @media screen and (min-width: 1200) {
-    .kontakt {
-      height: 30vh;
+  .elsa-bild {
+    width: 80%;
+    height: 65vh;
+  }
+  .om {
+    .om-p {
+      color: black;
+      line-height: 1.8rem;
     }
+  }
+}
 
-    .elsa-bild {
-      width: 75%;
-      height: 60vh;
-    }
-    .om {
-      .om-p {
-        color: black;
-        width: 100%;
-        line-height: 2em;
-        line-height: 1.8rem;
-      }
+@media screen and (min-width: 1200) {
+  .elsa-bild {
+    width: 80%;
+    height: 60vh;
+  }
+
+  .om {
+    .om-p {
+      color: black;
+      line-height: 2rem;
     }
   }
 }
