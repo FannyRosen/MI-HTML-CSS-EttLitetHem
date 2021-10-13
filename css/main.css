@@ -158,12 +158,12 @@ button {
 .kontakt .bi-telephone,
 .kontakt .bi-envelope {
   color: black;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 .kontakt .bi-twitter,
 .kontakt .bi-facebook,
 .kontakt .bi-instagram {
-  font-size: 2rem;
+  font-size: 1.6rem;
   border-radius: 50%;
 }
 .kontakt .bi-twitter {
@@ -190,12 +190,6 @@ button {
 .kontakt .kont-P {
   color: black;
   font-size: 1rem;
-}
-.kontakt iframe {
-  width: 250px;
-  height: 250px;
-  border: 1px solid black;
-  margin-left: 40%;
 }
 .kontakt textarea {
   width: 100%;
