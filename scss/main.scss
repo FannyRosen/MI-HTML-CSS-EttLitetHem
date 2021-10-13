@@ -159,19 +159,17 @@ button {
     width: 50%;
     text-align: center;
   }
-  .modal-footer {
-    .btn.btn-primary {
-      background-color: rgb(126, 141, 126);
-      border-color: white;
-    }
-    a {
-      color: white;
-      text-decoration: none;
-    }
+}
+.modal-footer {
+  .btn.btn-primary {
+    background-color: rgb(126, 141, 126);
+    border-color: white;
+  }
+  a {
+    color: white;
+    text-decoration: none;
   }
 }
-
-/*Rasmus kod börjar här*/
 
 .anchor {
   text-decoration: none;
@@ -180,7 +178,6 @@ button {
 
 .elsa-bild {
   width: 90%;
-  height: 60vh;
   position: relative;
   margin-left: 5%;
 }
@@ -253,9 +250,9 @@ button {
     font-size: 1rem;
   }
 }
+/*media queries börjar här*/
 
 @media screen and (min-width: 786px) {
-  /*Hannas kod börjar här*/
   .grid-container {
     display: grid;
     grid-template-columns: 100px 1fr 100px 1fr;
@@ -344,7 +341,6 @@ button {
 
     .elsa-bild {
       width: 75%;
-      height: 60vh;
     }
     .om {
       .om-p {
