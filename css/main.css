@@ -24,6 +24,21 @@ body {
   text-align: center;
   justify-content: space-around;
 }
+.header .dropdown-item {
+  color: #b4ada4;
+}
+.header .dropdown-item a {
+  background-color: none;
+}
+
+.nav-link {
+  color: #b4ada4 !important;
+}
+
+.navbar-toggler {
+  background-color: #ececec;
+  padding: 20px;
+}
 
 .hero {
   grid-area: content;

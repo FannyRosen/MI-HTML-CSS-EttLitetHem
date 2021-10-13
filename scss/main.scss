@@ -31,6 +31,17 @@ body {
   flex-direction: column;
   text-align: center;
   justify-content: space-around;
+  
+  .dropdown-item {
+    color: $header-textcolor;
+   a {
+     background-color: none;
+  
+   }
+}
+}
+.nav-link {
+  color: $header-textcolor !important;
 }
 
 .hero {
