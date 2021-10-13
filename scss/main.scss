@@ -86,7 +86,10 @@ body {
 .products {
   text-align: center;
   color: $text-color;
-  font-weight: lighter;
+
+  h2 {
+    font-weight: lighter;
+  }
 }
 .productwrapper {
   display: flex;
@@ -155,6 +158,16 @@ button {
   .varukorg-container {
     width: 50%;
     text-align: center;
+  }
+  .modal-footer {
+    .btn.btn-primary {
+      background-color: rgb(126, 141, 126);
+      border-color: white;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
 }
 
