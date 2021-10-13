@@ -86,6 +86,7 @@ body {
 .products {
   text-align: center;
   color: $text-color;
+  font-weight: lighter;
 }
 .productwrapper {
   display: flex;
@@ -104,7 +105,11 @@ body {
     flex-direction: column;
     align-items: center;
     width: 80%;
-    margin-top: 30px;
+    margin: 20px;
+
+    p {
+      font-size: 1rem;
+    }
 
     img[class^="img"] {
       width: 100%;
@@ -113,9 +118,11 @@ body {
       text-decoration: none;
       color: $text-color;
       margin: 10px;
+      font-weight: lighter;
+      font-size: 1.2rem;
 
       &:hover {
-        color: rgb(92, 100, 92);
+        color: rgb(117, 126, 117);
       }
       &:focus {
         outline: none !important;
@@ -132,6 +139,25 @@ button {
   color: $text-color;
 }
 
+/*Modal*/
+.modal-body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  .modal-img-container {
+    width: 50%;
+
+    .modal-img {
+      width: 100%;
+    }
+  }
+  .varukorg-container {
+    width: 50%;
+    text-align: center;
+  }
+}
+
 /*Rasmus kod börjar här*/
 .elsa-bild {
   width: 90%;
@@ -141,9 +167,8 @@ button {
 }
 
 .om {
-  border: 1px solid black;
   .om-p {
-    color: black;
+    color: $text-color;
     font-size: 0.9rem;
     width: 98%;
     line-height: 1.6rem;
@@ -151,27 +176,28 @@ button {
     margin-left: 1.5%;
   }
   .om-h2 {
-    color: black;
+    color: $text-color;
     position: relative;
     margin-left: 2%;
   }
 }
 
 .kontakt {
-  border: 1px solid black;
-  height: 126vh;
+  border: $text-color;
+  height: 70vh;
 
   .bi-geo-alt,
   .bi-shop,
   .bi-telephone,
-  .bi-envelope {
-    color: black;
-    font-size: 1.6rem;
+  .bi-envelope,
+  .bi-arrow-down-circle {
+    color: $text-color;
+    font-size: 1.2rem;
   }
   .bi-twitter,
   .bi-facebook,
   .bi-instagram {
-    font-size: 1.6rem;
+    font-size: 2rem;
     border-radius: 50%;
   }
 
@@ -284,39 +310,30 @@ button {
     }
   }
 
+  .kont-P {
+    color: $text-color;
+    font-size: 1.2em;
+  }
   .kontakt {
-    height: 70vh;
+    height: 25vh;
+  }
 
-    .bi-geo-alt,
-    .bi-shop,
-    .bi-telephone,
-    .bi-envelope {
-      font-size: 1.8rem;
+  @media screen and (min-width: 1200) {
+    .kontakt {
+      height: 30vh;
     }
-  }
 
-  .elsa-bild {
-    width: 80%;
-    height: 65vh;
-  }
-  .om {
-    .om-p {
-      color: black;
-      line-height: 1.8rem;
+    .elsa-bild {
+      width: 75%;
+      height: 60vh;
     }
-  }
-}
-
-@media screen and (min-width: 1200) {
-  .elsa-bild {
-    width: 80%;
-    height: 60vh;
-  }
-
-  .om {
-    .om-p {
-      color: black;
-      line-height: 2rem;
+    .om {
+      .om-p {
+        color: $text-color;
+        width: 100%;
+        line-height: 2em;
+        line-height: 1.8rem;
+      }
     }
   }
 }
