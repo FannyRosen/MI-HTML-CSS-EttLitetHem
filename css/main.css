@@ -182,13 +182,16 @@ button {
   margin-left: 5%;
 }
 
-.om .om-p {
+.om .om-p,
+.om .om-ikon {
   color: #444444;
-  font-size: 0.9rem;
   width: 98%;
   line-height: 1.6rem;
   position: relative;
   margin-left: 1.5%;
+}
+.om .om-p {
+  font-size: 1rem;
 }
 .om .om-h2 {
   color: #444444;
@@ -196,9 +199,14 @@ button {
   margin-left: 2%;
 }
 
+.om-ikon {
+  font-size: 1.4em;
+}
+
 .kontakt {
   border: #444444;
   height: 80vh;
+  background-color: #7e8d7e;
 }
 .kontakt .bi-geo-alt,
 .kontakt .bi-shop,
@@ -210,32 +218,12 @@ button {
 .kontakt .bi-twitter,
 .kontakt .bi-facebook,
 .kontakt .bi-instagram {
+  color: #444444;
   font-size: 1.6rem;
   border-radius: 50%;
 }
-.kontakt .bi-twitter {
-  color: #55acee;
-}
-.kontakt .bi-facebook {
-  color: #3b5998;
-}
-.kontakt .bi-instagram {
-  color: #ac2bac;
-}
-.kontakt .bi-geo-alt {
-  color: red;
-}
-.kontakt .bi-telephone {
-  color: green;
-}
-.kontakt .bi-shop {
-  color: brown;
-}
-.kontakt .bi-envelope {
-  color: blue;
-}
 .kontakt .kont-P {
-  color: black;
+  color: #444444;
   font-size: 1rem;
 }
 
@@ -340,9 +328,8 @@ button {
     padding: 6%;
   }
 
-  .elsa-bild {
-    width: 80%;
-    height: 70vh;
+  .els-con {
+    width: 72%;
   }
 
   .kon-dialog {
