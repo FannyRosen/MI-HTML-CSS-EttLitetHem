@@ -178,7 +178,7 @@ button {
 
 .anchor {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .elsa-bild {
@@ -340,10 +340,6 @@ button {
     }
   }
 
-  .kont-P {
-    color: $text-color;
-    font-size: 1.2em;
-  }
   .kontakt {
     height: 50vh;
     .bi-geo-alt,
@@ -370,23 +366,34 @@ button {
     width: 80%;
     margin-left: 35%;
   }
+}
 
-  @media screen and (min-width: 1200) {
-    .kontakt {
-      height: 30vh;
+@media screen and (min-width: 1200) {
+  .kontakt {
+    height: 50vh;
+    .bi-geo-alt,
+    .bi-shop,
+    .bi-telephone,
+    .bi-envelope {
+      font-size: 2.2rem;
+      padding: 7%;
     }
+    .bi-twitter,
+    .bi-facebook,
+    .bi-instagram {
+      font-size: 2.2rem;
+      padding: 7%;
+    }
+  }
 
-    .elsa-bild {
-      width: 75%;
-    }
-    .om {
-      .om-p {
-        color: $text-color;
-        width: 100%;
-        line-height: 2em;
-        line-height: 1.8rem;
-      }
-    }
+  .elsa-bild {
+    width: 85%;
+    height: 75vh;
+  }
+
+  .kon-dialog {
+    width: 85%;
+    margin-left: 40%;
   }
 }
 
