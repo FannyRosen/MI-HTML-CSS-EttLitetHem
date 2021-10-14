@@ -178,7 +178,7 @@ button {
 
 .anchor {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .elsa-bild {
@@ -205,20 +205,19 @@ button {
 
 .kontakt {
   border: $text-color;
-  height: 70vh;
+  height: 80vh;
 
   .bi-geo-alt,
   .bi-shop,
   .bi-telephone,
-  .bi-envelope,
-  .bi-arrow-down-circle {
+  .bi-envelope {
     color: $text-color;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
   .bi-twitter,
   .bi-facebook,
   .bi-instagram {
-    font-size: 2rem;
+    font-size: 1.6rem;
     border-radius: 50%;
   }
 
@@ -254,6 +253,16 @@ button {
     color: black;
     font-size: 1rem;
   }
+}
+
+.kon-button {
+  background-color: rgb(126, 141, 126);
+  color: white;
+}
+
+.kon-dialog {
+  width: 80%;
+  margin-left: 8%;
 }
 /*media queries börjar här*/
 
@@ -331,30 +340,60 @@ button {
     }
   }
 
-  .kont-P {
-    color: $text-color;
-    font-size: 1.2em;
-  }
   .kontakt {
-    height: 25vh;
+    height: 50vh;
+    .bi-geo-alt,
+    .bi-shop,
+    .bi-telephone,
+    .bi-envelope {
+      font-size: 2rem;
+      padding: 6%;
+    }
+    .bi-twitter,
+    .bi-facebook,
+    .bi-instagram {
+      font-size: 2rem;
+      padding: 6%;
+    }
   }
 
-  @media screen and (min-width: 1200) {
-    .kontakt {
-      height: 30vh;
-    }
+  .elsa-bild {
+    width: 80%;
+    height: 70vh;
+  }
 
-    .elsa-bild {
-      width: 75%;
+  .kon-dialog {
+    width: 80%;
+    margin-left: 35%;
+  }
+}
+
+@media screen and (min-width: 1200) {
+  .kontakt {
+    height: 50vh;
+    .bi-geo-alt,
+    .bi-shop,
+    .bi-telephone,
+    .bi-envelope {
+      font-size: 2.2rem;
+      padding: 7%;
     }
-    .om {
-      .om-p {
-        color: $text-color;
-        width: 100%;
-        line-height: 2em;
-        line-height: 1.8rem;
-      }
+    .bi-twitter,
+    .bi-facebook,
+    .bi-instagram {
+      font-size: 2.2rem;
+      padding: 7%;
     }
+  }
+
+  .elsa-bild {
+    width: 85%;
+    height: 75vh;
+  }
+
+  .kon-dialog {
+    width: 85%;
+    margin-left: 40%;
   }
 }
 
