@@ -154,14 +154,26 @@ button {
   background-color: #7e8d7e;
   border-color: white;
 }
+.modal-footer .btn.btn-primary:hover {
+  background-color: #616b61;
+}
 .modal-footer a {
   color: white;
   text-decoration: none;
 }
 
-.submit-btn {
+#submit-btn {
   background-color: #7e8d7e;
-  border-color: white;
+  border: white;
+  border-radius: 5px;
+}
+#submit-btn:hover {
+  background-color: #616b61;
+}
+
+.form-check-input:checked {
+  background-color: #7e8d7e;
+  border-color: #616b61;
 }
 
 /*Rasmus kod börjar här*/
@@ -176,13 +188,16 @@ button {
   margin-left: 5%;
 }
 
-.om .om-p {
+.om .om-p,
+.om .om-ikon {
   color: #444444;
-  font-size: 0.9rem;
   width: 98%;
   line-height: 1.6rem;
   position: relative;
   margin-left: 1.5%;
+}
+.om .om-p {
+  font-size: 1rem;
 }
 .om .om-h2 {
   color: #444444;
@@ -190,9 +205,14 @@ button {
   margin-left: 2%;
 }
 
+.om-ikon {
+  font-size: 1.4em;
+}
+
 .kontakt {
   border: #444444;
   height: 80vh;
+  background-color: #7e8d7e;
 }
 .kontakt .bi-geo-alt,
 .kontakt .bi-shop,
@@ -204,32 +224,12 @@ button {
 .kontakt .bi-twitter,
 .kontakt .bi-facebook,
 .kontakt .bi-instagram {
+  color: #444444;
   font-size: 1.6rem;
   border-radius: 50%;
 }
-.kontakt .bi-twitter {
-  color: #55acee;
-}
-.kontakt .bi-facebook {
-  color: #3b5998;
-}
-.kontakt .bi-instagram {
-  color: #ac2bac;
-}
-.kontakt .bi-geo-alt {
-  color: red;
-}
-.kontakt .bi-telephone {
-  color: green;
-}
-.kontakt .bi-shop {
-  color: brown;
-}
-.kontakt .bi-envelope {
-  color: blue;
-}
 .kontakt .kont-P {
-  color: black;
+  color: #444444;
   font-size: 1rem;
 }
 
@@ -244,7 +244,7 @@ button {
 }
 
 /*media queries börjar här*/
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .grid-container {
     display: grid;
     grid-template-columns: 100px 1fr 100px 1fr;
@@ -311,6 +311,7 @@ button {
   .productwrapper .one div[class^=container],
 .productwrapper .two div[class^=container] {
     width: 20%;
+    margin: 15px;
   }
   .productwrapper .one div[class^=container] img[class^=img],
 .productwrapper .two div[class^=container] img[class^=img] {
@@ -318,58 +319,93 @@ button {
   }
 
   .kontakt {
-    height: 50vh;
+    height: 40vh;
   }
   .kontakt .bi-geo-alt,
 .kontakt .bi-shop,
 .kontakt .bi-telephone,
 .kontakt .bi-envelope {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 6%;
   }
   .kontakt .bi-twitter,
 .kontakt .bi-facebook,
 .kontakt .bi-instagram {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 6%;
   }
 
+  .els-con {
+    width: 100%;
+  }
+
   .elsa-bild {
-    width: 80%;
-    height: 70vh;
+    position: relative;
+    margin-left: 2%;
   }
 
   .kon-dialog {
-    width: 80%;
-    margin-left: 35%;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .om .om-p,
+.om .om-ikon {
+    position: relative;
+    margin-left: 1.5%;
   }
 }
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1024px) {
   .kontakt {
-    height: 50vh;
+    height: 65vh;
   }
   .kontakt .bi-geo-alt,
 .kontakt .bi-shop,
 .kontakt .bi-telephone,
 .kontakt .bi-envelope {
-    font-size: 2.2rem;
-    padding: 7%;
+    font-size: 2.4rem;
+    padding: 8%;
   }
   .kontakt .bi-twitter,
 .kontakt .bi-facebook,
 .kontakt .bi-instagram {
-    font-size: 2.2rem;
-    padding: 7%;
+    font-size: 2.4rem;
+    padding: 8%;
+  }
+
+  .els-con {
+    width: 80%;
   }
 
   .elsa-bild {
-    width: 85%;
-    height: 75vh;
+    width: 82%;
+    position: relative;
+    margin-left: 30%;
   }
 
   .kon-dialog {
-    width: 85%;
-    margin-left: 40%;
+    margin-left: 35%;
+  }
+
+  .om .om-p,
+.om .om-ikon {
+    color: #444444;
+    width: 98%;
+    line-height: 1.6rem;
+    position: relative;
+    margin-left: 1.5%;
+  }
+  .om .om-p {
+    font-size: 1rem;
+  }
+  .om .om-h2 {
+    color: #444444;
+    position: relative;
+    margin-left: 2%;
+  }
+
+  .productwrapper div[class^=container] {
+    margin: 30px;
   }
 }
 /*finalpage börjar här*/
