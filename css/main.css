@@ -305,6 +305,7 @@ button {
   .productwrapper .one div[class^=container],
 .productwrapper .two div[class^=container] {
     width: 20%;
+    margin: 15px;
   }
   .productwrapper .one div[class^=container] img[class^=img],
 .productwrapper .two div[class^=container] img[class^=img] {
@@ -395,6 +396,10 @@ button {
     color: #444444;
     position: relative;
     margin-left: 2%;
+  }
+
+  .productwrapper div[class^=container] {
+    margin: 30px;
   }
 }
 /*finalpage börjar här*/
