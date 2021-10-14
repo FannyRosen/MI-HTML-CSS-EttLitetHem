@@ -188,13 +188,16 @@ button {
 }
 
 .om {
-  .om-p {
+  .om-p,
+  .om-ikon {
     color: $text-color;
-    font-size: 0.9rem;
     width: 98%;
     line-height: 1.6rem;
     position: relative;
     margin-left: 1.5%;
+  }
+  .om-p {
+    font-size: 1rem;
   }
   .om-h2 {
     color: $text-color;
@@ -202,10 +205,14 @@ button {
     margin-left: 2%;
   }
 }
+.om-ikon {
+  font-size: 1.4em;
+}
 
 .kontakt {
   border: $text-color;
   height: 80vh;
+  background-color: rgb(126, 141, 126);
 
   .bi-geo-alt,
   .bi-shop,
@@ -217,40 +224,13 @@ button {
   .bi-twitter,
   .bi-facebook,
   .bi-instagram {
+    color: $text-color;
     font-size: 1.6rem;
     border-radius: 50%;
   }
 
-  .bi-twitter {
-    color: #55acee;
-  }
-
-  .bi-facebook {
-    color: #3b5998;
-  }
-
-  .bi-instagram {
-    color: #ac2bac;
-  }
-
-  .bi-geo-alt {
-    color: red;
-  }
-
-  .bi-telephone {
-    color: green;
-  }
-
-  .bi-shop {
-    color: brown;
-  }
-
-  .bi-envelope {
-    color: blue;
-  }
-
   .kont-P {
-    color: black;
+    color: $text-color;
     font-size: 1rem;
   }
 }
