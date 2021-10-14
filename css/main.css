@@ -186,20 +186,19 @@ button {
 
 .kontakt {
   border: #444444;
-  height: 30vh;
+  height: 80vh;
 }
 .kontakt .bi-geo-alt,
 .kontakt .bi-shop,
 .kontakt .bi-telephone,
-.kontakt .bi-envelope,
-.kontakt .bi-arrow-down-circle {
+.kontakt .bi-envelope {
   color: #444444;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 .kontakt .bi-twitter,
 .kontakt .bi-facebook,
 .kontakt .bi-instagram {
-  font-size: 2rem;
+  font-size: 1.6rem;
   border-radius: 50%;
 }
 .kontakt .bi-twitter {
@@ -226,6 +225,16 @@ button {
 .kontakt .kont-P {
   color: black;
   font-size: 1rem;
+}
+
+.kon-button {
+  background-color: #7e8d7e;
+  color: white;
+}
+
+.kon-dialog {
+  width: 80%;
+  margin-left: 8%;
 }
 
 /*media queries börjar här*/
@@ -308,7 +317,30 @@ button {
   }
 
   .kontakt {
-    height: 25vh;
+    height: 50vh;
+  }
+  .kontakt .bi-geo-alt,
+.kontakt .bi-shop,
+.kontakt .bi-telephone,
+.kontakt .bi-envelope {
+    font-size: 2rem;
+    padding: 6%;
+  }
+  .kontakt .bi-twitter,
+.kontakt .bi-facebook,
+.kontakt .bi-instagram {
+    font-size: 2rem;
+    padding: 6%;
+  }
+
+  .elsa-bild {
+    width: 80%;
+    height: 70vh;
+  }
+
+  .kon-dialog {
+    width: 80%;
+    margin-left: 35%;
   }
 }
 @media screen and (min-width: 786px) and (min-width: 1200) {
