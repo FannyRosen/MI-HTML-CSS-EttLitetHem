@@ -305,6 +305,7 @@ button {
   .productwrapper .one div[class^=container],
 .productwrapper .two div[class^=container] {
     width: 20%;
+    margin: 15px;
   }
   .productwrapper .one div[class^=container] img[class^=img],
 .productwrapper .two div[class^=container] img[class^=img] {
@@ -363,6 +364,10 @@ button {
   .kon-dialog {
     width: 85%;
     margin-left: 40%;
+  }
+
+  .productwrapper div[class^=container] {
+    margin: 30px;
   }
 }
 /*finalpage börjar här*/
