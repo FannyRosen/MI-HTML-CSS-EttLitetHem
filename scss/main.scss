@@ -279,7 +279,7 @@ button {
 }
 /*media queries börjar här*/
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .grid-container {
     display: grid;
     grid-template-columns: 100px 1fr 100px 1fr;
@@ -345,7 +345,6 @@ button {
 
       div[class^="container"] {
         width: 20%;
-        margin: 10px;
 
         img[class^="img"] {
           width: 100%;

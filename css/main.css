@@ -148,14 +148,26 @@ button {
   background-color: #7e8d7e;
   border-color: white;
 }
+.modal-footer .btn.btn-primary:hover {
+  background-color: #616b61;
+}
 .modal-footer a {
   color: white;
   text-decoration: none;
 }
 
-.submit-btn {
+#submit-btn {
   background-color: #7e8d7e;
-  border-color: white;
+  border: white;
+  border-radius: 5px;
+}
+#submit-btn:hover {
+  background-color: #616b61;
+}
+
+.form-check-input:checked {
+  background-color: #7e8d7e;
+  border-color: #616b61;
 }
 
 /*Rasmus kod börjar här*/
@@ -238,7 +250,7 @@ button {
 }
 
 /*media queries börjar här*/
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .grid-container {
     display: grid;
     grid-template-columns: 100px 1fr 100px 1fr;
@@ -338,7 +350,7 @@ button {
     margin-left: 35%;
   }
 }
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1024px) {
   .kontakt {
     height: 50vh;
   }
