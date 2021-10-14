@@ -163,6 +163,10 @@ button {
   .btn.btn-primary {
     background-color: rgb(126, 141, 126);
     border-color: white;
+
+    &:hover {
+      background-color: rgb(97, 107, 97);
+    }
   }
   a {
     color: white;
@@ -170,9 +174,18 @@ button {
   }
 }
 
-.submit-btn {
+#submit-btn {
   background-color: rgb(126, 141, 126);
-  border-color: white;
+  border: white;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: rgb(97, 107, 97);
+  }
+}
+.form-check-input:checked {
+  background-color: rgb(126, 141, 126);
+  border-color: rgb(97, 107, 97);
 }
 /*Rasmus kod börjar här*/
 
@@ -266,7 +279,7 @@ button {
 }
 /*media queries börjar här*/
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 600px) {
   .grid-container {
     display: grid;
     grid-template-columns: 100px 1fr 100px 1fr;
@@ -332,6 +345,7 @@ button {
 
       div[class^="container"] {
         width: 20%;
+        margin: 10px;
 
         img[class^="img"] {
           width: 100%;
@@ -368,7 +382,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1024px) {
   .kontakt {
     height: 50vh;
     .bi-geo-alt,
