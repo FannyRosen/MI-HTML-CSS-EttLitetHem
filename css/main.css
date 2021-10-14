@@ -312,57 +312,89 @@ button {
   }
 
   .kontakt {
-    height: 50vh;
+    height: 40vh;
   }
   .kontakt .bi-geo-alt,
 .kontakt .bi-shop,
 .kontakt .bi-telephone,
 .kontakt .bi-envelope {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 6%;
   }
   .kontakt .bi-twitter,
 .kontakt .bi-facebook,
 .kontakt .bi-instagram {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 6%;
   }
 
   .els-con {
-    width: 72%;
+    width: 100%;
+  }
+
+  .elsa-bild {
+    position: relative;
+    margin-left: 2%;
   }
 
   .kon-dialog {
-    width: 80%;
-    margin-left: 35%;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .om .om-p,
+.om .om-ikon {
+    position: relative;
+    margin-left: 1.5%;
   }
 }
 @media screen and (min-width: 1024px) {
   .kontakt {
-    height: 50vh;
+    height: 65vh;
   }
   .kontakt .bi-geo-alt,
 .kontakt .bi-shop,
 .kontakt .bi-telephone,
 .kontakt .bi-envelope {
-    font-size: 2.2rem;
-    padding: 7%;
+    font-size: 2.4rem;
+    padding: 8%;
   }
   .kontakt .bi-twitter,
 .kontakt .bi-facebook,
 .kontakt .bi-instagram {
-    font-size: 2.2rem;
-    padding: 7%;
+    font-size: 2.4rem;
+    padding: 8%;
+  }
+
+  .els-con {
+    width: 80%;
   }
 
   .elsa-bild {
-    width: 85%;
-    height: 75vh;
+    width: 82%;
+    position: relative;
+    margin-left: 30%;
   }
 
   .kon-dialog {
-    width: 85%;
-    margin-left: 40%;
+    margin-left: 35%;
+  }
+
+  .om .om-p,
+.om .om-ikon {
+    color: #444444;
+    width: 98%;
+    line-height: 1.6rem;
+    position: relative;
+    margin-left: 1.5%;
+  }
+  .om .om-p {
+    font-size: 1rem;
+  }
+  .om .om-h2 {
+    color: #444444;
+    position: relative;
+    margin-left: 2%;
   }
 }
 /*finalpage börjar här*/
