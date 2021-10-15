@@ -278,11 +278,11 @@ button {
 .messbutton-container {
   height: 30px;
   border-radius: 5px;
-  border: none;
   background-color: #7e8d7e;
+  border: none;
 }
 .messbutton-container:hover {
-  background-color: rgba(0, 0, 0, 0.623);
+  background-color: rgba(0, 0, 0, 0.123);
 }
 
 .messbutton {
@@ -453,39 +453,4 @@ button {
     position: relative;
     margin-left: 2%;
   }
-}
-/*finalpage börjar här*/
-.messagecontainer {
-  grid-area: content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-image: url("../Bilder/Ev-hero3.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 10px;
-  height: 100vh;
-}
-.messagecontainer .message-text {
-  background-color: #ffffffc5;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.6rem;
-  padding: 15px;
-  margin: 15px;
-  border-style: solid;
-  border-color: #7e8d7e;
-  border-radius: 10px;
-}
-.messagecontainer .message-text .messageh1,
-.messagecontainer .message-text p {
-  font-weight: lighter;
-  padding: 10px;
-}
-
-.messbutton {
-  height: 30px;
-  border-radius: 5px;
-  background-color: #f9fcf9;
 }
