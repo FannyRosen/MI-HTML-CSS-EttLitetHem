@@ -301,20 +301,15 @@ button {
 
   .productwrapper {
     width: 100%;
-  }
-  .productwrapper .one,
-.productwrapper .two {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
   }
-  .productwrapper .one div[class^=container],
-.productwrapper .two div[class^=container] {
-    width: 20%;
-    margin: 15px;
+  .productwrapper div[class^=container] {
+    width: 40%;
   }
-  .productwrapper .one div[class^=container] img[class^=img],
-.productwrapper .two div[class^=container] img[class^=img] {
+  .productwrapper div[class^=container] img[class^=img] {
     width: 100%;
   }
 
@@ -356,6 +351,10 @@ button {
   }
 }
 @media screen and (min-width: 1024px) {
+  .productwrapper div[class^=container] {
+    width: 20%;
+  }
+
   .kontakt {
     height: 65vh;
   }
@@ -403,47 +402,49 @@ button {
     position: relative;
     margin-left: 2%;
   }
-}
-/*finalpage börjar här*/
-.messagecontainer {
-  grid-area: content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-image: url("../Bilder/Ev-hero3.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 10px;
-  height: 100vh;
-}
-.messagecontainer .message-text {
-  background-color: #ffffffc5;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.6rem;
-  padding: 15px;
-  margin: 15px;
-  border-style: solid;
-  border-color: #7e8d7e;
-  border-radius: 10px;
-}
-.messagecontainer .message-text .messageh1, .messagecontainer .message-text p {
-  font-weight: lighter;
-  padding: 10px;
-}
 
-.messbutton {
-  height: 30px;
-  border-radius: 5px;
-  border: white;
-  background-color: #8d9c8d;
-}
+  /*finalpage börjar här*/
+  .messagecontainer {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../Bilder/Ev-hero3.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    height: 100vh;
+  }
+  .messagecontainer .message-text {
+    background-color: #ffffffc5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    padding: 15px;
+    margin: 15px;
+    border-style: solid;
+    border-color: #7e8d7e;
+    border-radius: 10px;
+  }
+  .messagecontainer .message-text .messageh1,
+.messagecontainer .message-text p {
+    font-weight: lighter;
+    padding: 10px;
+  }
 
-a {
-  color: white !important;
-  text-decoration: none;
-}
-a:hover {
-  background-color: rgba(116, 131, 116, 0.363);
+  .messbutton {
+    height: 30px;
+    border-radius: 5px;
+    border: white;
+    background-color: #8d9c8d;
+  }
+
+  a {
+    color: white !important;
+    text-decoration: none;
+  }
+  a:hover {
+    background-color: rgba(116, 131, 116, 0.363);
+  }
 }
