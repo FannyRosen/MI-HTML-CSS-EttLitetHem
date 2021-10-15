@@ -205,17 +205,13 @@ button {
   margin-left: 2%;
 }
 
-.kon-link {
-  color: black;
-}
-
 .om-ikon {
   font-size: 1.4em;
 }
 
 .kontakt {
   border: #444444;
-  height: 80vh;
+  height: 60%;
   background-color: #7e8d7e;
 }
 .kontakt .bi-geo-alt,
