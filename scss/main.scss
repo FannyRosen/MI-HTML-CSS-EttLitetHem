@@ -85,7 +85,6 @@ body {
   }
 }
 
-
 .products {
   text-align: center;
   color: $text-color;
@@ -145,7 +144,6 @@ button {
   color: $text-color;
 }
 
-/*Modal*/
 .modal-body {
   display: flex;
   flex-direction: row;
@@ -263,7 +261,6 @@ button {
   margin-left: 8%;
 }
 
-/*finalpage börjar här*/
 .final-body {
   background-image: url("../Bilder/Ev-hero3.jpeg");
   background-repeat: no-repeat;
@@ -271,7 +268,6 @@ button {
   background-size: cover;
 }
 .messagecontainer {
-  grid-area: content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -315,7 +311,7 @@ button {
   .grid-container {
     display: grid;
     grid-template-columns: 100px 1fr 100px 1fr;
-    grid-template-rows: 35vh 60vh 20vh 20vh;
+    grid-template-rows: 35vh 30vh 20vh 20vh;
     gap: 1em;
     grid-template-areas:
       "header header header header"

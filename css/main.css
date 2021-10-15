@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*Hannas kod börjar här*/
 * {
   box-sizing: border-box;
 }
@@ -77,7 +76,6 @@ body {
   color: whitesmoke;
 }
 
-/*Fannys kod börjar här*/
 .products {
   text-align: center;
   color: #444444;
@@ -133,7 +131,6 @@ button {
   color: #444444;
 }
 
-/*Modal*/
 .modal-body {
   display: flex;
   flex-direction: row;
@@ -176,7 +173,6 @@ button {
   border-color: #616b61;
 }
 
-/*Rasmus kod börjar här*/
 .anchor {
   text-decoration: none;
   color: white;
@@ -243,7 +239,6 @@ button {
   margin-left: 8%;
 }
 
-/*finalpage börjar här*/
 .final-body {
   background-image: url("../Bilder/Ev-hero3.jpeg");
   background-repeat: no-repeat;
@@ -252,7 +247,6 @@ button {
 }
 
 .messagecontainer {
-  grid-area: content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -295,7 +289,7 @@ button {
   .grid-container {
     display: grid;
     grid-template-columns: 100px 1fr 100px 1fr;
-    grid-template-rows: 35vh 60vh 20vh 20vh;
+    grid-template-rows: 35vh 30vh 20vh 20vh;
     gap: 1em;
     grid-template-areas: "header header header header" "content content content content" "content content content content" ". . . .";
   }
