@@ -4,476 +4,476 @@ $background-color: #ececec;
 $text-color: #444444;
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	font: $font-stack;
-	color: $text-color;
-	background-color: $background-color;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	font-size: 12px;
-	font-weight: lighter;
+  font: $font-stack;
+  color: $text-color;
+  background-color: $background-color;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: lighter;
 }
 
 .grid-container {
-	display: grid;
-	grid-template-columns: 100px 1fr 100px 1fr;
-	grid-template-rows: 26vh 55vh 20vh;
-	gap: 1em;
-	grid-template-areas:
-		"header header header header"
-		"content content content content"
-		". . . .";
+  display: grid;
+  grid-template-columns: 100px 1fr 100px 1fr;
+  grid-template-rows: 26vh 55vh 20vh;
+  gap: 1em;
+  grid-template-areas:
+    "header header header header"
+    "content content content content"
+    ". . . .";
 }
 
 .header {
-	grid-area: header;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	justify-content: space-around;
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
 
-	.dropdown-item {
-		color: $text-color;
-		a {
-			background-color: none;
-		}
-	}
+  .dropdown-item {
+    color: $text-color;
+    a {
+      background-color: none;
+    }
+  }
 }
 .nav-link {
-	color: $text-color !important;
+  color: $text-color !important;
 }
 
 .hero {
-	grid-area: content;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	background-image: url("../Bilder/evhero112.png");
-	background-size: cover;
-	background-position: center;
-	color: whitesmoke;
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../Bilder/evhero112.png");
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
 
-	p {
-		width: 80%;
-		border-radius: 1%;
-		font-size: 1.5rem;
-		margin-bottom: 15px;
-	}
+  p {
+    width: 80%;
+    border-radius: 1%;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
 }
 
 .button {
-	background-color: #fdfdfd50;
-	font-size: 1rem;
-	font-weight: lighter;
-	border-style: none;
-	border-radius: 2%;
-	height: 50px;
-	width: 90px;
-	&:hover {
-		box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-			0 17px 50px 0 rgba(0, 0, 0, 0.19);
-		font-size: 17px;
+  background-color: #fdfdfd50;
+  font-size: 1rem;
+  font-weight: lighter;
+  border-style: none;
+  border-radius: 2%;
+  height: 50px;
+  width: 90px;
+  &:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    font-size: 17px;
 
-		a {
-			color: whitesmoke;
-		}
-	}
+    a {
+      color: whitesmoke;
+    }
+  }
 }
 
 /*Fannys kod börjar här*/
 .products {
-	text-align: center;
-	color: $text-color;
+  text-align: center;
+  color: $text-color;
 
-	h2 {
-		font-weight: lighter;
-	}
+  h2 {
+    font-weight: lighter;
+  }
 }
 .productwrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 
-	section {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-	div[class^="container"] {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 80%;
-		margin: 20px;
+  div[class^="container"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 20px;
 
-		p {
-			font-size: 1rem;
-		}
+    p {
+      font-size: 1rem;
+    }
 
-		img[class^="img"] {
-			width: 100%;
-		}
-		button[id^="productname"] {
-			text-decoration: none;
-			color: $text-color;
-			margin: 10px;
-			font-weight: lighter;
-			font-size: 1.2rem;
+    img[class^="img"] {
+      width: 100%;
+    }
+    button[id^="productname"] {
+      text-decoration: none;
+      color: $text-color;
+      margin: 10px;
+      font-weight: lighter;
+      font-size: 1.2rem;
 
-			&:hover {
-				color: rgb(117, 126, 117);
-			}
-			&:focus {
-				outline: none !important;
-				box-shadow: none !important;
-			}
-		}
-	}
+      &:hover {
+        color: rgb(117, 126, 117);
+      }
+      &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+      }
+    }
+  }
 }
 
 p {
-	margin: 5px;
+  margin: 5px;
 }
 button {
-	color: $text-color;
+  color: $text-color;
 }
 
 /*Modal*/
 .modal-body {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 
-	.modal-img-container {
-		width: 50%;
+  .modal-img-container {
+    width: 50%;
 
-		.modal-img {
-			width: 100%;
-		}
-	}
-	.varukorg-container {
-		width: 50%;
-		text-align: center;
-	}
+    .modal-img {
+      width: 100%;
+    }
+  }
+  .varukorg-container {
+    width: 50%;
+    text-align: center;
+  }
 }
 
 .modal-footer {
-	.btn.btn-primary {
-		background-color: rgb(126, 141, 126);
-		border-color: white;
+  .btn.btn-primary {
+    background-color: rgb(126, 141, 126);
+    border-color: white;
 
-		&:hover {
-			background-color: rgb(97, 107, 97);
-		}
-	}
-	a {
-		color: white;
-		text-decoration: none;
-	}
+    &:hover {
+      background-color: rgb(97, 107, 97);
+    }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 #submit-btn {
-	background-color: rgb(126, 141, 126);
-	border: white;
-	border-radius: 5px;
+  background-color: rgb(126, 141, 126);
+  border: white;
+  border-radius: 5px;
 
-	&:hover {
-		background-color: rgb(97, 107, 97);
-	}
+  &:hover {
+    background-color: rgb(97, 107, 97);
+  }
 }
 .form-check-input:checked {
-	background-color: rgb(126, 141, 126);
-	border-color: rgb(97, 107, 97);
+  background-color: rgb(126, 141, 126);
+  border-color: rgb(97, 107, 97);
 }
 /*Rasmus kod börjar här*/
 
 .anchor {
-	text-decoration: none;
-	color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .elsa-bild {
-	width: 90%;
-	position: relative;
-	margin-left: 5%;
+  width: 90%;
+  position: relative;
+  margin-left: 5%;
 }
 
 .om {
-	.om-p,
-	.om-ikon {
-		color: $text-color;
-		width: 98%;
-		line-height: 1.6rem;
-		position: relative;
-		margin-left: 1.5%;
-	}
-	.om-p {
-		font-size: 1rem;
-	}
-	.om-h2 {
-		color: $text-color;
-		position: relative;
-		margin-left: 2%;
-	}
+  .om-p,
+  .om-ikon {
+    color: $text-color;
+    width: 98%;
+    line-height: 1.6rem;
+    position: relative;
+    margin-left: 1.5%;
+  }
+  .om-p {
+    font-size: 1rem;
+  }
+  .om-h2 {
+    color: $text-color;
+    position: relative;
+    margin-left: 2%;
+  }
 }
+
 .om-ikon {
-	font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 .kontakt {
-	border: $text-color;
-	height: 80vh;
-	background-color: rgb(126, 141, 126);
+  border: $text-color;
+  height: 80vh;
+  background-color: rgb(126, 141, 126);
 
-	.bi-geo-alt,
-	.bi-shop,
-	.bi-telephone,
-	.bi-envelope {
-		color: $text-color;
-		font-size: 1.6rem;
-	}
-	.bi-twitter,
-	.bi-facebook,
-	.bi-instagram {
-		color: $text-color;
-		font-size: 1.6rem;
-		border-radius: 50%;
-	}
+  .bi-geo-alt,
+  .bi-shop,
+  .bi-telephone,
+  .bi-envelope {
+    color: $text-color;
+    font-size: 1.6rem;
+  }
+  .bi-twitter,
+  .bi-facebook,
+  .bi-instagram {
+    color: $text-color;
+    font-size: 1.6rem;
+    border-radius: 50%;
+  }
 
-	.kont-P {
-		color: $text-color;
-		font-size: 1rem;
-	}
+  .kont-P {
+    color: $text-color;
+    font-size: 1rem;
+  }
 }
 
 .kon-button {
-	background-color: rgb(126, 141, 126);
-	color: white;
+  background-color: rgb(126, 141, 126);
+  color: white;
 }
 
 .kon-dialog {
-	width: 80%;
-	margin-left: 8%;
+  width: 80%;
+  margin-left: 8%;
 }
 /*media queries börjar här*/
 
 @media screen and (min-width: 768px) {
-	.grid-container {
-		display: grid;
-		grid-template-columns: 100px 1fr 100px 1fr;
-		grid-template-rows: 35vh 60vh 20vh 20vh;
-		gap: 1em;
-		grid-template-areas:
-			"header header header header"
-			"content content content content"
-			"content content content content"
-			". . . .";
-	}
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px 1fr;
+    grid-template-rows: 35vh 60vh 20vh 20vh;
+    gap: 1em;
+    grid-template-areas:
+      "header header header header"
+      "content content content content"
+      "content content content content"
+      ". . . .";
+  }
 
-	.container-fluid {
-		flex-direction: column;
-		padding: 15px;
-	}
+  .container-fluid {
+    flex-direction: column;
+    padding: 15px;
+  }
 
-	.nav-link {
-		color: $text-color !important;
-		font-size: 1.1rem;
-		text-transform: uppercase;
-		text-decoration: none;
-		letter-spacing: 0.15em;
-		display: inline-block;
-		padding: 15px 20px;
-		position: relative;
-	}
-	a:after {
-		background: none repeat scroll 0 0 transparent;
-		bottom: 0;
-		content: "";
-		display: block;
-		height: 2px;
-		left: 50%;
-		position: absolute;
-		background: $text-color;
-		transition: width 0.3s ease 0s, left 0.3s ease 0s;
-		width: 0;
-	}
-	a:hover:after {
-		width: 100%;
-		left: 0;
-	}
-	.dropdown-item {
-		color: $text-color;
-		a {
-			background-color: none;
-		}
-	}
+  .nav-link {
+    color: $text-color !important;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: $text-color;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  .dropdown-item {
+    color: $text-color;
+    a {
+      background-color: none;
+    }
+  }
 
-	.hero p {
-		width: 45%;
-		font-size: 2rem;
-	}
+  .hero p {
+    width: 45%;
+    font-size: 2rem;
+  }
 
-	.productwrapper {
-		width: 100%;
-		.one,
-		.two {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
+  .productwrapper {
+    width: 100%;
+    .one,
+    .two {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
 
-			div[class^="container"] {
-				width: 20%;
-				margin: 15px;
+      div[class^="container"] {
+        width: 20%;
+        margin: 15px;
 
-				img[class^="img"] {
-					width: 100%;
-				}
-			}
-		}
-	}
+        img[class^="img"] {
+          width: 100%;
+        }
+      }
+    }
+  }
 
-	.kontakt {
-		height: 40vh;
-		.bi-geo-alt,
-		.bi-shop,
-		.bi-telephone,
-		.bi-envelope {
-			font-size: 1.8rem;
-			padding: 6%;
-		}
-		.bi-twitter,
-		.bi-facebook,
-		.bi-instagram {
-			font-size: 1.8rem;
-			padding: 6%;
-		}
-	}
+  .kontakt {
+    height: 40vh;
+    .bi-geo-alt,
+    .bi-shop,
+    .bi-telephone,
+    .bi-envelope {
+      font-size: 1.8rem;
+      padding: 6%;
+    }
+    .bi-twitter,
+    .bi-facebook,
+    .bi-instagram {
+      font-size: 1.8rem;
+      padding: 6%;
+    }
+  }
 
-	.els-con {
-		width: 100%;
-	}
+  .els-con {
+    width: 100%;
+  }
 
-	.elsa-bild {
-		position: relative;
-		margin-left: 2%;
-	}
+  .elsa-bild {
+    position: relative;
+    margin-left: 2%;
+  }
 
-	.kon-dialog {
-		width: 60%;
-		margin-left: 20%;
-	}
+  .kon-dialog {
+    width: 60%;
+    margin-left: 20%;
+  }
 
-	.om {
-		.om-p,
-		.om-ikon {
-			position: relative;
-			margin-left: 1.5%;
-		}
-	}
+  .om {
+    .om-p,
+    .om-ikon {
+      position: relative;
+      margin-left: 1.5%;
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
-	.kontakt {
-		height: 65vh;
-		.bi-geo-alt,
-		.bi-shop,
-		.bi-telephone,
-		.bi-envelope {
-			font-size: 2.4rem;
-			padding: 8%;
-		}
-		.bi-twitter,
-		.bi-facebook,
-		.bi-instagram {
-			font-size: 2.4rem;
-			padding: 8%;
-		}
-	}
+  .kontakt {
+    height: 65vh;
+    .bi-geo-alt,
+    .bi-shop,
+    .bi-telephone,
+    .bi-envelope {
+      font-size: 2.4rem;
+      padding: 8%;
+    }
+    .bi-twitter,
+    .bi-facebook,
+    .bi-instagram {
+      font-size: 2.4rem;
+      padding: 8%;
+    }
+  }
 
-	.els-con {
-		width: 80%;
-	}
+  .els-con {
+    width: 80%;
+  }
 
-	.elsa-bild {
-		width: 82%;
-		position: relative;
-		margin-left: 30%;
-	}
+  .elsa-bild {
+    width: 82%;
+    position: relative;
+    margin-left: 30%;
+  }
 
-	.kon-dialog {
-		margin-left: 35%;
-	}
+  .kon-dialog {
+    margin-left: 35%;
+  }
 
-	.om {
-		.om-p,
-		.om-ikon {
-			color: $text-color;
-			width: 98%;
-			line-height: 1.6rem;
-			position: relative;
-			margin-left: 1.5%;
-		}
-		.om-p {
-			font-size: 1rem;
-		}
-		.om-h2 {
-			color: $text-color;
-			position: relative;
-			margin-left: 2%;
-		}
-	}
+  .om {
+    .om-p,
+    .om-ikon {
+      color: $text-color;
+      width: 98%;
+      line-height: 1.6rem;
+      position: relative;
+      margin-left: 1.5%;
+    }
+    .om-p {
+      font-size: 1rem;
+    }
+    .om-h2 {
+      color: $text-color;
+      position: relative;
+      margin-left: 2%;
+    }
+  }
 }
 /*finalpage börjar här*/
 .messagecontainer {
-	grid-area: content;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-	background-image: url("../Bilder/Ev-hero3.jpeg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	padding: 10px;
-	height: 100vh;
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../Bilder/Ev-hero3.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  height: 100vh;
 
-	.message-text {
-		background-color: #ffffffc5;
-		font-family: $font-stack;
-		font-size: 1.6rem;
-		padding: 15px;
-		margin: 15px;
-		border-style: solid;
-		border-color: rgb(126, 141, 126);
-		border-radius: 10px;
+  .message-text {
+    background-color: #ffffffc5;
+    font-family: $font-stack;
+    font-size: 1.6rem;
+    padding: 15px;
+    margin: 15px;
+    border-style: solid;
+    border-color: rgb(126, 141, 126);
+    border-radius: 10px;
 
-		.messageh1,
-		p {
-			font-weight: lighter;
-			padding: 10px;
-		}
-	}
+    .messageh1,
+    p {
+      font-weight: lighter;
+      padding: 10px;
+    }
+  }
 }
 .messbutton {
-	height: 30px;
-	border-radius: 5px;
-	border: white;
-	background-color: rgb(141, 156, 141);
+  height: 30px;
+  border-radius: 5px;
+  border: white;
+  background-color: rgb(141, 156, 141);
 }
 a {
-	color: white !important;
-	text-decoration: none;
+  color: white !important;
+  text-decoration: none;
 
-	&:hover {
-		background-color: rgba(116, 131, 116, 0.363);
-	}
+  &:hover {
+    background-color: rgba(116, 131, 116, 0.363);
+  }
 }
-

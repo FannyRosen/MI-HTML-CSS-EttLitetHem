@@ -205,6 +205,10 @@ button {
   margin-left: 2%;
 }
 
+.kon-link {
+  color: black;
+}
+
 .om-ikon {
   font-size: 1.4em;
 }
@@ -428,7 +432,8 @@ button {
   border-color: #7e8d7e;
   border-radius: 10px;
 }
-.messagecontainer .message-text .messageh1, .messagecontainer .message-text p {
+.messagecontainer .message-text .messageh1,
+.messagecontainer .message-text p {
   font-weight: lighter;
   padding: 10px;
 }
