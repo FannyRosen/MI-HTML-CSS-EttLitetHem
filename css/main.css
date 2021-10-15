@@ -265,6 +265,7 @@ button {
 }
 .messagecontainer .message-text .messageh1,
 .messagecontainer .message-text p {
+  font-weight: lighter;
   padding: 10px;
 }
 
