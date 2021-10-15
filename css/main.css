@@ -18,7 +18,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 100px 1fr 100px 1fr;
-  grid-template-rows: 26vh 55vh 20vh;
+  grid-template-rows: 27vh 55vh 20vh;
   gap: 1em;
   grid-template-areas: "header header header header" "content content content content" ". . . .";
 }
@@ -212,7 +212,7 @@ button {
 .kontakt {
   border: #444444;
   height: 60%;
-  background-color: #7e8d7e;
+  background-color: #b8c0b8;
 }
 .kontakt .bi-geo-alt,
 .kontakt .bi-shop,
@@ -234,7 +234,7 @@ button {
 }
 
 .kon-button {
-  background-color: #7e8d7e;
+  background-color: rgba(149, 158, 149, 0.226);
   color: white;
 }
 
