@@ -224,13 +224,14 @@ button {
     margin-left: 2%;
   }
 }
+
 .om-ikon {
   font-size: 1.4em;
 }
 
 .kontakt {
   border: $text-color;
-  height: 80vh;
+  height: 60%;
   background-color: rgb(126, 141, 126);
 
   .bi-geo-alt,
@@ -338,7 +339,7 @@ button {
   }
 
   .kontakt {
-    height: 40vh;
+    height: 60vh;
     .bi-geo-alt,
     .bi-shop,
     .bi-telephone,
@@ -431,50 +432,49 @@ button {
       margin-left: 2%;
     }
   }
+}
+/*finalpage börjar här*/
+.messagecontainer {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../Bilder/Ev-hero3.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  height: 100vh;
 
-  /*finalpage börjar här*/
-  .messagecontainer {
-    grid-area: content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-image: url("../Bilder/Ev-hero3.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 10px;
-    height: 100vh;
+  .message-text {
+    background-color: #ffffffc5;
+    font-family: $font-stack;
+    font-size: 1.6rem;
+    padding: 15px;
+    margin: 15px;
+    border-style: solid;
+    border-color: rgb(126, 141, 126);
+    border-radius: 10px;
 
-    .message-text {
-      background-color: #ffffffc5;
-      font-family: $font-stack;
-      font-size: 1.6rem;
-      padding: 15px;
-      margin: 15px;
-      border-style: solid;
-      border-color: rgb(126, 141, 126);
-      border-radius: 10px;
-
-      .messageh1,
-      p {
-        font-weight: lighter;
-        padding: 10px;
-      }
+    .messageh1,
+    p {
+      font-weight: lighter;
+      padding: 10px;
     }
   }
-  .messbutton {
-    height: 30px;
-    border-radius: 5px;
-    border: white;
-    background-color: rgb(141, 156, 141);
-  }
-  a {
-    color: white !important;
-    text-decoration: none;
+}
+.messbutton {
+  height: 30px;
+  border-radius: 5px;
+  border: white;
+  background-color: rgb(141, 156, 141);
+}
+a {
+  color: white !important;
+  text-decoration: none;
 
-    &:hover {
-      background-color: rgba(116, 131, 116, 0.363);
-    }
+  &:hover {
+    background-color: rgba(116, 131, 116, 0.363);
   }
 }

@@ -70,7 +70,8 @@ body {
   width: 90px;
 }
 .button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
   font-size: 17px;
 }
 .button:hover a {
@@ -97,30 +98,30 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.productwrapper div[class^=container] {
+.productwrapper div[class^="container"] {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
   margin: 20px;
 }
-.productwrapper div[class^=container] p {
+.productwrapper div[class^="container"] p {
   font-size: 1rem;
 }
-.productwrapper div[class^=container] img[class^=img] {
+.productwrapper div[class^="container"] img[class^="img"] {
   width: 100%;
 }
-.productwrapper div[class^=container] button[id^=productname] {
+.productwrapper div[class^="container"] button[id^="productname"] {
   text-decoration: none;
   color: #444444;
   margin: 10px;
   font-weight: lighter;
   font-size: 1.2rem;
 }
-.productwrapper div[class^=container] button[id^=productname]:hover {
+.productwrapper div[class^="container"] button[id^="productname"]:hover {
   color: #757e75;
 }
-.productwrapper div[class^=container] button[id^=productname]:focus {
+.productwrapper div[class^="container"] button[id^="productname"]:focus {
   outline: none !important;
   box-shadow: none !important;
 }
@@ -211,7 +212,7 @@ button {
 
 .kontakt {
   border: #444444;
-  height: 80vh;
+  height: 60%;
   background-color: #7e8d7e;
 }
 .kontakt .bi-geo-alt,
@@ -306,26 +307,26 @@ button {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .productwrapper div[class^=container] {
+  .productwrapper div[class^="container"] {
     width: 40%;
   }
-  .productwrapper div[class^=container] img[class^=img] {
+  .productwrapper div[class^="container"] img[class^="img"] {
     width: 100%;
   }
 
   .kontakt {
-    height: 40vh;
+    height: 60vh;
   }
   .kontakt .bi-geo-alt,
-.kontakt .bi-shop,
-.kontakt .bi-telephone,
-.kontakt .bi-envelope {
+  .kontakt .bi-shop,
+  .kontakt .bi-telephone,
+  .kontakt .bi-envelope {
     font-size: 1.8rem;
     padding: 6%;
   }
   .kontakt .bi-twitter,
-.kontakt .bi-facebook,
-.kontakt .bi-instagram {
+  .kontakt .bi-facebook,
+  .kontakt .bi-instagram {
     font-size: 1.8rem;
     padding: 6%;
   }
@@ -345,13 +346,13 @@ button {
   }
 
   .om .om-p,
-.om .om-ikon {
+  .om .om-ikon {
     position: relative;
     margin-left: 1.5%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .productwrapper div[class^=container] {
+  .productwrapper div[class^="container"] {
     width: 20%;
   }
 
@@ -359,15 +360,15 @@ button {
     height: 65vh;
   }
   .kontakt .bi-geo-alt,
-.kontakt .bi-shop,
-.kontakt .bi-telephone,
-.kontakt .bi-envelope {
+  .kontakt .bi-shop,
+  .kontakt .bi-telephone,
+  .kontakt .bi-envelope {
     font-size: 2.4rem;
     padding: 8%;
   }
   .kontakt .bi-twitter,
-.kontakt .bi-facebook,
-.kontakt .bi-instagram {
+  .kontakt .bi-facebook,
+  .kontakt .bi-instagram {
     font-size: 2.4rem;
     padding: 8%;
   }
@@ -387,7 +388,7 @@ button {
   }
 
   .om .om-p,
-.om .om-ikon {
+  .om .om-ikon {
     color: #444444;
     width: 98%;
     line-height: 1.6rem;
@@ -428,7 +429,7 @@ button {
     border-radius: 10px;
   }
   .messagecontainer .message-text .messageh1,
-.messagecontainer .message-text p {
+  .messagecontainer .message-text p {
     font-weight: lighter;
     padding: 10px;
   }
