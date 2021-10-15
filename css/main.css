@@ -243,6 +243,53 @@ button {
   margin-left: 8%;
 }
 
+/*finalpage börjar här*/
+.final-body {
+  background-image: url("../Bilder/Ev-hero3.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.messagecontainer {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  height: 100vh;
+}
+.messagecontainer .message-text {
+  background-color: #ffffffe8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 10px;
+}
+.messagecontainer .message-text .messageh1,
+.messagecontainer .message-text p {
+  font-weight: lighter;
+  padding: 10px;
+}
+
+.messbutton-container {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #7e8d7e;
+}
+.messbutton-container:hover {
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
+.messbutton {
+  color: white !important;
+  text-decoration: none;
+}
+
 /*media queries börjar här*/
 @media screen and (min-width: 768px) {
   .grid-container {
@@ -355,6 +402,10 @@ button {
     margin-left: 1.5%;
   }
 }
+.message-text {
+  width: 70%;
+}
+
 @media screen and (min-width: 1024px) {
   .kontakt {
     height: 65vh;
@@ -403,47 +454,8 @@ button {
     position: relative;
     margin-left: 2%;
   }
-}
-/*finalpage börjar här*/
-.messagecontainer {
-  grid-area: content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-image: url("../Bilder/Ev-hero3.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 10px;
-  height: 100vh;
-}
-.messagecontainer .message-text {
-  background-color: #ffffffc5;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.6rem;
-  padding: 15px;
-  margin: 15px;
-  border-style: solid;
-  border-color: #7e8d7e;
-  border-radius: 10px;
-}
-.messagecontainer .message-text .messageh1, .messagecontainer .message-text p {
-  font-weight: lighter;
-  padding: 10px;
-}
 
-.messbutton {
-  height: 30px;
-  border-radius: 5px;
-  border: white;
-  background-color: #8d9c8d;
-}
-
-a {
-  color: white !important;
-  text-decoration: none;
-}
-a:hover {
-  background-color: rgba(116, 131, 116, 0.363);
+  .message-text {
+    width: 60%;
+  }
 }
