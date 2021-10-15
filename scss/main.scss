@@ -267,51 +267,50 @@ button {
 
 /*finalpage börjar här*/
 .final-body {
-	background-image: url("../Bilder/Ev-hero3.jpeg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+  background-image: url("../Bilder/Ev-hero3.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .messagecontainer {
-	grid-area: content;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-	align-items: center;
-	padding: 10px;
-	height: 100vh;
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  height: 100vh;
 
-	.message-text {
-		background-color: #ffffffe8;
-		font-family: $font-stack;
-		font-size: 1.6rem;
-		padding: 15px;
-		margin: 15px;
-		border-radius: 10px;
+  .message-text {
+    background-color: #ffffffe8;
+    font-family: $font-stack;
+    font-size: 1.6rem;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
 
-		.messageh1,
-		p {
-			font-weight: lighter;
-			padding: 10px;
-		}
-	}
+    .messageh1,
+    p {
+      font-weight: lighter;
+      padding: 10px;
+    }
+  }
 }
 .messbutton-container {
-	height: 30px;
-	border-radius: 5px;
-	border: none;
-	background-color: rgb(126, 141, 126);
-	
-	&:hover {
-		background-color: rgba(0, 0, 0, 0.623);
-	}
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(126, 141, 126);
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.623);
+  }
 }
 
 .messbutton {
-color: white !important;
-text-decoration: none;
-
+  color: white !important;
+  text-decoration: none;
 }
 /*media queries börjar här*/
 
@@ -373,19 +372,16 @@ text-decoration: none;
 
   .productwrapper {
     width: 100%;
-    .one,
-    .two {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 
-      div[class^="container"] {
-        width: 20%;
-        margin: 15px;
+    div[class^="container"] {
+      width: 40%;
 
-        img[class^="img"] {
-          width: 100%;
-        }
+      img[class^="img"] {
+        width: 100%;
       }
     }
   }
@@ -408,7 +404,7 @@ text-decoration: none;
   }
 
   .els-con {
-    width: 100%;
+    width: 80%;
   }
 
   .elsa-bild {
@@ -431,11 +427,14 @@ text-decoration: none;
 }
 
 .message-text {
-	width: 70%;
-
+  width: 70%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
+  .productwrapper div[class^="container"] {
+    width: 20%;
+  }
+
   .kontakt {
     height: 65vh;
     .bi-geo-alt,

@@ -348,20 +348,15 @@ button {
 
   .productwrapper {
     width: 100%;
-  }
-  .productwrapper .one,
-.productwrapper .two {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
   }
-  .productwrapper .one div[class^=container],
-.productwrapper .two div[class^=container] {
-    width: 20%;
-    margin: 15px;
+  .productwrapper div[class^=container] {
+    width: 40%;
   }
-  .productwrapper .one div[class^=container] img[class^=img],
-.productwrapper .two div[class^=container] img[class^=img] {
+  .productwrapper div[class^=container] img[class^=img] {
     width: 100%;
   }
 
@@ -383,7 +378,7 @@ button {
   }
 
   .els-con {
-    width: 100%;
+    width: 80%;
   }
 
   .elsa-bild {
@@ -406,7 +401,11 @@ button {
   width: 70%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
+  .productwrapper div[class^=container] {
+    width: 20%;
+  }
+
   .kontakt {
     height: 65vh;
   }
